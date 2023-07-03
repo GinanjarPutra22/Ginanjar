@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <!-- ====== Navbar Section Start -->
+    <div id="home" class="">
+
+        <header x-data="{ navbarOpen: false }
+        " class="absolute inset-x-0 top-0 z-50 flex items-center w-full ">
+            <div class="container mx-auto">
+                <div class="relative flex items-center justify-between -mx-4">
+                    <div class="max-w-full px-4 w-60">
+                        <a href="javascript:void(0)"
+                            class="block w-full py-5 text-2xl font-semibold pe-6 text-black1 dark:text-white ">
+                            GinanjarPutra
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-between w-full px-4">
+                        <div>
+                            <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive' "
+                                id="navbarToggler"
+                                class=" absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px]  lg:hidden">
+                                <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
+                                <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
+                                <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
+                            </button>
+                            <nav :class="!navbarOpen && 'hidden' " id="navbarCollapse"
+                                class="absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white/90 md:bg-transparent py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none justify-between items-center">
+
+
+                                <div class="w-full lg:flex lg:justify-between lg:items-center gap-36 ">
+                                    <ul class="items-center lg:flex sm:mb-6 md:mb-0">
+                                        <li>
+                                            <a href="#home"
+                                                class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#about"
+                                                class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                                About
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#portfolio"
+                                                class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                                Portfolio
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#blog"
+                                                class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                                Blog
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact"
+                                                class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                                Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="mt-4 sm:py-6 md:py-0 bg-blend-saturation md:ml-0 ">
+
+                                        <a href="https://drive.google.com/file/d/1CjEyRM75h_YyhljvOTyhsTXtPl1fqYwz/view?usp=sharing"
+                                            target="_blank"
+                                            class="px-8 py-3 text-sm font-medium text-white rounded-lg lg:px-4 bg-primary hover:bg-opacity-90">
+                                            Download my CV
+                                        </a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="relative px-6 pt-2 isolate lg:px-8">
+        <div class="absolute inset-x-0 overflow-hidden -top-40 -z-10 transform-gpu blur-3xl sm:-top-80"
+            aria-hidden="true">
+            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#5500ffaf] to-[#0613ff53] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%,)">
+            </div>
+        </div>
+        <div class="max-w-2xl py-24 mx-auto sm:py-52 lg:py-32">
+            <div class="py-4 sm:mb-8 sm:flex sm:justify-center">
+                <div
+                    class="relative p-2 text-sm leading-6 text-center text-red-200 rounded-lg animate-bounce ring-1 ring-gray-900/10 hover:ring-sky-900 hover:font-semibold hover:text-gray-700 focus:ring-red-600">
+                    New Blog: Mengenal apa itu UI/UX Design
+
+                    <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
+                        target="_blank" class="font-medium text-primary"><span class="absolute inset-0"
+                            aria-hidden="true"></span>Read
+                        more <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </div>
+            <!-- TEXT -->
+            <div class="text-center">
+                <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Hello, I'm Ginanjar
+                    <span class="animate-pulse ">👋</span>
+                </h1>
+                <h1 class="text-2xl font-bold tracking-tight text-gray-800 sm:text-4xl">
+                    UI/UX Enthusiast & Currently studying web programming</h1>
+                <p class="mt-6 text-lg leading-8 text-gray-600">
+                    A learner UI/UX Designer and creative Web Developer who creates engaging and functional
+                    digital experiences for users.
+                </p>
+                <div class="flex items-center justify-center mt-10 gap-x-6 ">
+
+
+                    <a href="https://drive.google.com/file/d/1CjEyRM75h_YyhljvOTyhsTXtPl1fqYwz/view?usp=sharing"
+                        target="_blank"
+                        class="text-sm font-semibold leading-6 text-gray-900 text-primary bg-slate-900 p-7 hover: hover:text-blue-500 ">Get
+                        my CV <span aria-hidden="true" class="text-lg">→</span></a>
+                </div>
+            </div>
+        </div>
+        <!-- blur-3xl -->
+
+        <div class="absolute inset-x-0 top-[calc(100%-13rem)] blur-3xl -z-10 transform-gpu overflow-hidden  sm:top-[calc(100%-30rem)]"
+            aria-hidden="true">
+            <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#03aaec] to-[#2bbfff13] sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                style="clip-path: polygon(74.4% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%,  17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%, )">
+            </div>
+        </div>
+
+        <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden  sm:top-[calc(100%-30rem)]"
+            aria-hidden="true">
+            <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- ====== Navbar Section End -->
+
+
+    <!--Start About -->
+    <div id="about"
+        class="relative px-12 py-24 overflow-hidden bg-white isolate md:px-28 sm:py-32 lg:overflow-visible lg:px-0">
+        <div class="absolute inset-0 overflow-hidden -z-10">
+            <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-slate-400/30 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+                aria-hidden="true">
+                <defs>
+                    <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1"
+                        patternUnits="userSpaceOnUse">
+                        <path d="M100 200V.5M.5 .5H200" fill="none" />
+                    </pattern>
+                </defs>
+                <svg x="50%" y="-1" class="overflow-visible fill-slate-400/10">
+                    <path
+                        d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                        stroke-width="0" />
+                </svg>
+                <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+            </svg>
+        </div>
+
+
+        <div
+            class="grid max-w-2xl grid-cols-1 mx-auto gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10 lg:ms-4">
+            <div
+                class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-16">
+                <div class="lg:pr-4" data-aos="fade-up" data-aos-delay="150" data-aos-duration="600">
+                    <div class="lg:max-w-lg">
+                        <p class="text-base font-semibold leading-7 text-primary">About Me</p>
+                        <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Moh. Ginanjar
+                            Shomat I. S</h1>
+
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="150" data-aos-duration="600"
+                class="p-12 -mt-12 -ml-12 overflow-x-hidden lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+                <img class="w-[48rem] max-w-none rounded-xl  shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                    src="../public/asstes/images/hero.png" alt="Test">
+            </div>
+            <div
+                class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-16 ">
+                <div class="lg:pl-12ms-12">
+                    <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+                        <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">An active student of the
+                            Information Technology Education undergraduate study program at
+                            Surabaya State University. I studied UI/UX Design with more than 1 year experience. Apart
+                            from that,
+                            he also studied web development for a Front-end-developer position with less than 1 year
+                            experience. What i do?
+                        </p>
+                        <ul role="list" class="mt-8 space-y-8 text-gray-600">
+                            <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" class="flex gap-x-3">
+                                <div class="p-2">
+                                    <svg class="flex-none w-8 h-5 mt-1 text-primary " viewBox="1 2 10 20"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M7.061 22c1.523 0 2.84-.543 3.91-1.613 1.123-1.123 1.707-2.854 1.551-4.494l8.564-8.564a3.123 3.123 0 0 0-.002-4.414c-1.178-1.18-3.234-1.18-4.412 0l-8.884 8.884c-1.913.169-3.807 1.521-3.807 3.919 0 .303.021.588.042.86.08 1.031.109 1.418-1.471 2.208a1.001 1.001 0 0 0-.122 1.717C2.52 20.563 4.623 22 7.061 22c-.001 0-.001 0 0 0zM18.086 4.328a1.144 1.144 0 0 1 1.586.002 1.12 1.12 0 0 1 0 1.584L12 13.586 10.414 12l7.672-7.672zM6.018 16.423c-.018-.224-.037-.458-.037-.706 0-1.545 1.445-1.953 2.21-1.953.356 0 .699.073.964.206.945.475 1.26 1.293 1.357 1.896.177 1.09-.217 2.368-.956 3.107C8.865 19.664 8.049 20 7.061 20H7.06c-.75 0-1.479-.196-2.074-.427 1.082-.973 1.121-1.989 1.032-3.15z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span><strong class="font-semibold text-gray-900">UI/UX Design</strong>
+                                    <br>
+                                    Worked with Figma, Figjam, Marvel, Mase.Co on brainstorming, wireframing,
+                                    design, prototyping, and usability testing.</span>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" class="flex gap-x-3">
+                                <div class="p-2">
+
+                                    <svg class="flex-none w-8 h-5 mt-1 text-primary" viewBox="0 0 20 20"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span><strong class="font-semibold text-gray-900">Web Development</strong>
+                                    <br>
+                                    Works with HTML 5, CSS, Sass, Bootstrap 5, Tailwind Css and Javascript.</span>
+                            </li>
+
+                        </ul>
+                        <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" class="mt-8">Because I come
+                            from the Information Technology Education department,
+                            Currently I'm learning to create content for UI/UX Design and Web Development to train
+                            me in conveying something that I understand as a form of implementation of the major I'm
+                            taking. <br> <a
+                                href="https://drive.google.com/file/d/1CjEyRM75h_YyhljvOTyhsTXtPl1fqYwz/view?usp=sharing"
+                                target="_blank"
+                                class="text-sm font-semibold leading-6 text-gray-900 text-blue-500 hover: hover:text-blue-500 ">Get
+                                my CV <span aria-hidden="true" class="text-lg">→</span></a></p>
+                        <!-- <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No problem.
+                            </h2>
+                            <p class="mt-6">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in.
+                                Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat
+                                vulputate nibh. Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
+                                enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed
+                                convallis diam.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End About -->
+
+
+
+
+
+
+
+    <!-- ====== Portfolio Section Start -->
+    <section x-data="
+        {
+          showCards: 'all',
+          activeClasses: 'bg-primary text-white',
+          inactiveClasses: 'text-body-color hover:bg-primary hover:text-white',
+        }
+    
+      " id="portfolio" class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full px-4">
+                    <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+                        <span data-aos="fade-up" data-aos-duration="600" data-aos-delay="150"
+                            class="block mb-2 text-lg font-semibold text-primary">
+                            Portfolio
+                        </span>
+                        <h2 data-aos="fade-up" data-aos-duration="600" data-aos-delay="150"
+                            class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
+                            My Recent Projects
+                        </h2>
+                        <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="150"
+                            class="text-base text-body-color">
+                            These are some of my projects in learning skills as a UI/UX Designer and Web Developer..
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center -mx-4">
+                <div class="w-full px-4">
+                    <ul class="flex flex-wrap justify-center mb-12 space-x-1">
+                        <li data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="150" class="mb-1">
+                            <button @click="showCards = 'all' "
+                                :class="showCards == 'all' ? activeClasses : inactiveClasses "
+                                class="inline-block px-5 py-2 text-base font-semibold text-center transition rounded-lg md:py-3 lg:px-8">
+                                All Projects
+                            </button>
+                        </li>
+                        <li data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="250" class="mb-1">
+                            <button @click="showCards = 'uiux' "
+                                :class="showCards == 'uiux' ? activeClasses : inactiveClasses "
+                                class="inline-block px-5 py-2 text-base font-semibold text-center transition rounded-lg md:py-3 lg:px-8">
+                                UI/UX Design
+                            </button>
+                        </li>
+                        <li data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="350" class="mb-1">
+                            <button @click="showCards = 'code' "
+                                :class="showCards == 'code' ? activeClasses : inactiveClasses "
+                                class="inline-block px-5 py-2 text-base font-semibold text-center transition rounded-lg md:py-3 lg:px-8">
+                                Code
+                            </button>
+                        </li>
+                        <li data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="450" class="mb-1">
+                            <button @click="showCards = 'design' "
+                                :class="showCards == 'design' ? activeClasses : inactiveClasses "
+                                class="inline-block px-5 py-2 text-base font-semibold text-center transition rounded-lg md:py-3 lg:px-8">
+                                Design
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Konten -->
+            <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="450" class="flex flex-wrap -mx-4">
+
+                <!-- ========KONTEN======== -->
+
+                <!-- WetQoe -->
+                <div :class="showCards == 'all' || showCards == 'uiux' ? 'block' : 'hidden' "
+                    class="w-full px-4 md:w-1/2 xl:w-1/3">
+                    <div class="relative mb-12">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="../public/asstes/images/portfolio/WetQoe (2).png" alt="portfolio"
+                                class="w-full" />
+                        </div>
+                        <div class="relative z-10 px-4 -mt-24 text-center bg-white rounded-lg shadow-lg py-9 mx-7">
+                            <span class="block mb-2 text-sm font-semibold text-primary">
+                                UI/UX Design
+                            </span>
+                            <h3 class="mb-4 text-base font-bold text-dark">WetQoe : Digital Experience for Online
+                                Shopping Plant</h3>
+                            <a href="https://tailwindui.com/components/marketing/sections/content-sections"
+                                class="inline-block px-6 py-2.5 text-xs font-semibold transition border rounded-md text-body-color hover:bg-primary hover:border-primary hover:text-white">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DigiSKill -->
+                <div :class="showCards == 'all' || showCards == 'code' ? 'block' : 'hidden' "
+                    class="w-full px-4 md:w-1/2 xl:w-1/3">
+                    <div class="relative mb-12">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="../public/asstes/images/portfolio/DigiSkill.png" alt="portfolio" class="w-full" />
+                        </div>
+                        <div class="relative z-10 px-4 -mt-24 text-center bg-white rounded-lg shadow-lg py-9 mx-7">
+                            <span class="block mb-2 text-sm font-semibold text-primary">
+                                Code
+                            </span>
+                            <h3 class="mb-4 text-base font-bold text-dark">DigiSkill: Website Penyedia pelatihan digital
+                                Skil</h3>
+                            <a href="https://dribbble.com/shots/18578443-Holide-Tour-and-Travel-Service-Provider?utm_source=Clipboard_Shot&utm_campaign=Ginanjar_Putra&utm_content=Holide%20-%20Tour%20and%20Travel%20Service%20Provider.&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=Ginanjar_Putra&utm_content=Holide%20-%20Tour%20and%20Travel%20Service%20Provider.&utm_medium=Social_Share"
+                                target="_blank"
+                                class="inline-block px-6 py-2.5 text-xs font-semibold transition border rounded-md text-body-color hover:bg-primary hover:border-primary hover:text-white">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WEBKUY -->
+                <div :class="showCards == 'all' || showCards == 'code' ? 'block' : 'hidden' "
+                    class="w-full px-4 md:w-1/2 xl:w-1/3">
+                    <div class="relative mb-12">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="../public/asstes/images/portfolio/WebKuy.png" alt="portfolio" class="w-full" />
+                        </div>
+                        <div class="relative z-10 px-4 -mt-24 text-center bg-white rounded-lg shadow-lg py-9 mx-7">
+                            <span class="block mb-2 text-sm font-semibold text-primary">
+                                Code
+                            </span>
+                            <h3 class="mb-4 text-base font-bold text-dark">Web-Kuy!: Aplikasi belajar web
+                                programing</h3>
+                            <a href="https://github.com/GinanjarPutra22/WebKuy-App" target="_blank"
+                                class="inline-block px-6 py-2.5 text-xs font-semibold transition border rounded-md text-body-color hover:bg-primary hover:border-primary hover:text-white">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HOLIDE -->
+                <div :class="showCards == 'all' || showCards == 'uiux' ? 'block' : 'hidden' "
+                    class="w-full px-4 md:w-1/2 xl:w-1/3">
+                    <div class="relative mb-12">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="../public/asstes/images/portfolio/Holide-Project.png" alt="portfolio"
+                                class="w-full" />
+                        </div>
+                        <div class="relative z-10 px-4 -mt-24 text-center bg-white rounded-lg shadow-lg py-9 mx-7">
+                            <span class="block mb-2 text-sm font-semibold text-primary">
+                                UI/UX Design
+                            </span>
+                            <h3 class="mb-4 text-base font-bold text-dark">Holide : Website penyedia jasa layanan paket
+                                liburan</h3>
+                            <a href="https://dribbble.com/shots/18578443-Holide-Tour-and-Travel-Service-Provider?utm_source=Clipboard_Shot&utm_campaign=Ginanjar_Putra&utm_content=Holide%20-%20Tour%20and%20Travel%20Service%20Provider.&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=Ginanjar_Putra&utm_content=Holide%20-%20Tour%20and%20Travel%20Service%20Provider.&utm_medium=Social_Share"
+                                target="_blank"
+                                class="inline-block px-6 py-2.5 text-xs font-semibold transition border rounded-md text-body-color hover:bg-primary hover:border-primary hover:text-white">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Blog New Start -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <section id="blog" class="bg-gray-100">
+        <div class="mx-auto max-w-[1340px] px-4 py-16 sm:px-6 sm:py-24 lg:me-0 lg:pe-0 lg:ps-8">
+            <div class="items-end justify-between max-w-7xl sm:flex sm:pe-6 lg:pe-8">
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="150"
+                    class="mx-8 mb-[60px] max-w-[510px] ">
+
+                    <span class="block mb-2 text-base font-semibold text-primary">
+                        Blog
+                    </span>
+                    <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
+                        Let's get Insight
+                    </h2>
+                    <p class="text-base text-body-color">
+                        In my effort to continuously learn and grow, I present my writings on this personal blog, hoping
+                        to broaden your insights as well :)
+                    </p>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="150" class="flex gap-4 mx-8 lg:mt-0">
+                    <button
+                        class="p-3 border rounded-md border-primary text-primary prev-button hover:bg-primary hover:text-white">
+                        <span class="sr-only">Previous Slide</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 rtl:rotate-180">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <button
+                        class="p-3 border rounded-md text-primary border-primary next-button hover:bg-primary hover:text-white">
+                        <span class="sr-only">Next Slide</span>
+                        <svg class="w-5 h-5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="150"
+                class="mx-6 mt-2 lg:col-span-2 lg:ml-8">
+                <div class="swiper-container !overflow-hidden py-2">
+                    <div class="pt-4 swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article
+                                class="max-w-md mx-auto overflow-hidden bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl">
+                                <div class="p-4">
+                                    <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
+                                        target="_blank">
+                                        <div class="rounded-2xl">
+                                            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qLlNDTNJmmU6eKKJWzREKQ.png"
+                                                class="object-cover rounded-lg aspect-video " alt="" />
+                                        </div>
+                                        <div class="mt-2">
+                                            <time class="text-xs leading-tight md:text-sm text-black2">2 Mar 2023</time>
+                                            </p>
+                                            <h3 class="text-base font-semibold text-gray-900 md:text-xl text-black1">
+                                                Mengenal apa itu <br>
+                                                UI/IX Design</h3>
+                                            <p class="mt-1 text-sm text-slate-500 md:text-base">Mungkin kamu pernah
+                                                mendengar tentang UI dan UX, kata ini akir-akhir ini sangat...</p>
+                                            <div class="flex gap-2 mt-4">
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-blue-600 rounded-md bg-blue-50">
+                                                    Design
+                                                </a>
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-indigo-600 rounded-md bg-indigo-50">
+                                                    Product
+                                                </a>
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-indigo-600 rounded-md bg-indigo-50">
+                                                    UI/UX
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article
+                                class="max-w-md mx-auto overflow-hidden bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl">
+                                <div class="p-4">
+                                    <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
+                                        target="_blank">
+                                        <div class="rounded-2xl">
+                                            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qLlNDTNJmmU6eKKJWzREKQ.png"
+                                                class="object-cover rounded-lg aspect-video " alt="" />
+                                        </div>
+                                        <div class="mt-2">
+                                            <time class="text-xs leading-tight md:text-sm text-black2">2 Mar 2023</time>
+                                            </p>
+                                            <h3 class="text-lg font-semibold text-gray-900 md:text-xl text-black1">
+                                                Mengenal apa itu <br>
+                                                UI/IX Design</h3>
+                                            <p class="mt-1 text-sm text-slate-500 md:text-base">Mungkin kamu pernah
+                                                mendengar tentang UI dan UX, kata ini akir-akhir ini sangat...</p>
+                                            <div class="flex gap-2 mt-4">
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-blue-600 rounded-md bg-blue-50">
+                                                    Design
+                                                </a>
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-indigo-600 rounded-md bg-indigo-50">
+                                                    Product
+                                                </a>
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-indigo-600 rounded-md bg-indigo-50">
+                                                    UI/UX
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article
+                                class="max-w-md mx-auto overflow-hidden bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl">
+                                <div class="p-4">
+                                    <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
+                                        target="_blank">
+                                        <div class="rounded-2xl">
+                                            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qLlNDTNJmmU6eKKJWzREKQ.png"
+                                                class="object-cover rounded-lg aspect-video " alt="" />
+                                        </div>
+                                        <div class="mt-2">
+                                            <time class="text-xs leading-tight md:text-sm text-black2">2 Mar 2023</time>
+                                            </p>
+                                            <h3 class="text-lg font-semibold text-gray-900 md:text-xl text-black1">
+                                                Mengenal apa itu <br>
+                                                UI/IX Design</h3>
+                                            <p class="mt-1 text-sm text-slate-500 md:text-base">Mungkin kamu pernah
+                                                mendengar tentang UI dan UX, kata ini akir-akhir ini sangat...</p>
+                                            <div class="flex gap-2 mt-4">
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-blue-600 rounded-md bg-blue-50">
+                                                    Design
+                                                </a>
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-indigo-600 rounded-md bg-indigo-50">
+                                                    Product
+                                                </a>
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-indigo-600 rounded-md bg-indigo-50">
+                                                    UI/UX
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article
+                                class="max-w-md mx-auto overflow-hidden bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl">
+                                <div class="p-4">
+                                    <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
+                                        target="_blank">
+                                        <div class="rounded-2xl">
+                                            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qLlNDTNJmmU6eKKJWzREKQ.png"
+                                                class="object-cover rounded-lg aspect-video " alt="" />
+                                        </div>
+                                        <div class="mt-2">
+                                            <time class="text-xs leading-tight md:text-sm text-black2">2 Mar 2023</time>
+                                            </p>
+                                            <h3 class="text-lg font-semibold text-gray-900 md:text-xl text-black1">
+                                                Mengenal apa itu <br>
+                                                UI/IX Design</h3>
+                                            <p class="mt-1 text-sm text-slate-500 md:text-base">Mungkin kamu pernah
+                                                mendengar tentang UI dan UX, kata ini akir-akhir ini sangat...</p>
+                                            <div class="flex gap-2 mt-4">
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-blue-600 rounded-md bg-blue-50">
+                                                    Design
+                                                </a>
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-indigo-600 rounded-md bg-indigo-50">
+                                                    Product
+                                                </a>
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-indigo-600 rounded-md bg-indigo-50">
+                                                    UI/UX
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article
+                                class="max-w-md mx-auto overflow-hidden bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl">
+                                <div class="p-4">
+                                    <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
+                                        target="_blank">
+                                        <div class="rounded-2xl">
+                                            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qLlNDTNJmmU6eKKJWzREKQ.png"
+                                                class="object-cover rounded-lg aspect-video " alt="" />
+                                        </div>
+                                        <div class="mt-2">
+                                            <time class="text-xs leading-tight md:text-sm text-black2">2 Mar 2023</time>
+                                            </p>
+                                            <h3 class="text-lg font-semibold text-gray-900 md:text-xl text-black1">
+                                                Mengenal apa itu <br>
+                                                UI/IX Design</h3>
+                                            <p class="mt-1 text-sm text-slate-500 md:text-base">Mungkin kamu pernah
+                                                mendengar tentang UI dan UX, kata ini akir-akhir ini sangat...</p>
+                                            <div class="flex gap-2 mt-4">
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-blue-600 rounded-md bg-blue-50">
+                                                    Design
+                                                </a>
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-indigo-600 rounded-md bg-indigo-50">
+                                                    Product
+                                                </a>
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-indigo-600 rounded-md bg-indigo-50">
+                                                    UI/UX
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article
+                                class="max-w-md mx-auto overflow-hidden bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl">
+                                <div class="p-4">
+                                    <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
+                                        target="_blank">
+                                        <div class="rounded-2xl">
+                                            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qLlNDTNJmmU6eKKJWzREKQ.png"
+                                                class="object-cover rounded-lg aspect-video " alt="" />
+                                        </div>
+                                        <div class="mt-2">
+                                            <time class="text-xs leading-tight md:text-sm text-black2">2 Mar 2023</time>
+                                            </p>
+                                            <h3 class="text-lg font-semibold text-gray-900 md:text-xl text-black1">
+                                                Mengenal apa itu <br>
+                                                UI/IX Design</h3>
+                                            <p class="mt-1 text-sm text-slate-500 md:text-base">Mungkin kamu pernah
+                                                mendengar tentang UI dan UX, kata ini akir-akhir ini sangat...</p>
+                                            <div class="flex gap-2 mt-4">
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-blue-600 rounded-md bg-blue-50">
+                                                    Design
+                                                </a>
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-indigo-600 rounded-md bg-indigo-50">
+                                                    Product
+                                                </a>
+                                                <a href="#"
+                                                    class="inline-flex items-center gap-1 px-2 py-1 text-xs font-semibold text-indigo-600 rounded-md bg-indigo-50">
+                                                    UI/UX
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.swiper-container', {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 32,
+                autoplay: {
+                    delay: 5000,
+                },
+                navigation: {
+                    nextEl: '.next-button',
+                    prevEl: '.prev-button',
+                },
+                breakpoints: {
+                    360: {
+                        slidesPerView: 1.5,
+                        centeredSlides: true,
+                    },
+                    640: {
+                        slidesPerView: 1.5,
+                        centeredSlides: true,
+                    },
+                    1024: {
+                        slidesPerView: 3.25,
+                        centeredSlides: false,
+
+
+                    },
+                },
+            })
+        })
+
+// Tabs start
+
+            // Tabs End
+    </script>
+    <!-- Blog End -->
+
+
+    <!-- ===== Contact Section Start ===== -->
+    <section id="contact" class="relative max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 lg:pt-6 drop-shadow-lg">
+
+        <div class="absolute inset-0 overflow-hidden -z-10">
+            <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-slate-400/30 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+                aria-hidden="true">
+                <defs>
+                    <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1"
+                        patternUnits="userSpaceOnUse">
+                        <path d="M100 200V.5M.5 .5H200" fill="none" />
+                    </pattern>
+                </defs>
+                <svg x="50%" y="-1" class="overflow-visible fill-slate-400/10">
+                    <path
+                        d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                        stroke-width="0" />
+                </svg>
+                <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+            </svg>
+        </div>
+
+        <div class="flex flex-wrap -mx-4 ">
+            <div data-aos="fade-up"" class=" w-full px-4 ">
+                <div class=" mx-auto mb-[60px] max-w-[510px] text-center">
+                <span data-aos="fade-up" data-aos-duration="600" data-aos-delay="150"
+                    class="block mb-2 text-lg font-semibold text-primary">
+                    Contact
+                </span>
+                <h2 data-aos="fade-up" data-aos-duration="600" data-aos-delay="150"
+                    class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
+                    Let's get Connect
+                </h2>
+                <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" class="text-base text-body-color">
+                    Thank you for taking the time to visit my personal website. I hope we can connect more.
+                </p>
+            </div>
+        </div>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto ">
+
+            <div class="flex flex-wrap justify-center -m-4">
+
+
+                <!-- Email -->
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="200"
+                    class="w-auto p-1.5 animate-bounce  ">
+                    <a class="flex items-center  px-4 py-2.5 bg-white  hover:shadow-lg border border-solid border-gray1-500 gap-2  rounded-full transition duration-200 :"
+                        href="mailto:mohginanjar22@gmail.com" title="mohginanjar22@gmail.com" target="_blank">
+                        <div class="inline-block p-1 bg-red-600 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" " style="
+                                fill: rgb(255, 251, 251);">
+                                <path
+                                    d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight text-black1 ">Email</span>
+                    </a>
+                </div>
+
+                <!-- Linkedin -->
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="500"
+                    class="w-auto p-1.5   animate-bounce ">
+
+                    <a class="flex items-center px-6 py-2.5 bg-white hover:shadow-lg border border-gray-300 rounded-full transition duration-200"
+                        href="https://www.linkedin.com/in/ginanjarputra22/" title="@ginanjarputra22">
+
+                        <div class="inline-block">
+                            <svg class="mr-1.5" width="22" height="22" viewbox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9995 0.439941C5.16725 0.439941 0.439453 5.16774 0.439453 10.9999C0.439453 16.8321 5.16725 21.5599 10.9995 21.5599C16.8317 21.5599 21.5595 16.8321 21.5595 10.9999C21.5595 5.16774 16.8317 0.439941 10.9995 0.439941ZM8.41445 15.3768H6.27605V8.49524H8.41445V15.3768ZM7.33205 7.65044C6.65665 7.65044 6.21995 7.17194 6.21995 6.58014C6.21995 5.97624 6.66985 5.51204 7.35955 5.51204C8.04925 5.51204 8.47165 5.97624 8.48485 6.58014C8.48485 7.17194 8.04925 7.65044 7.33205 7.65044ZM16.2245 15.3768H14.0861V11.5631C14.0861 10.6754 13.7759 10.0726 13.0026 10.0726C12.4119 10.0726 12.061 10.4807 11.9059 10.8734C11.8487 11.0131 11.8344 11.2111 11.8344 11.408V15.3757H9.69485V10.6897C9.69485 9.83064 9.66735 9.11234 9.63875 8.49414H11.4967L11.5946 9.45004H11.6375C11.9191 9.00124 12.6088 8.33904 13.7627 8.33904C15.1696 8.33904 16.2245 9.28174 16.2245 11.3079V15.3768Z"
+                                    fill="#0A66C2"></path>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight text-black1 ">LinkedIn</span>
+                    </a>
+                </div>
+
+                <!-- INSTA -->
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="800"
+                    class="w-auto p-1.5  animate-bounce   ">
+                    <a class="flex items-center px-4 py-2.5 bg-white  hover:shadow-lg border gap-2 border-gray-300 rounded-full transition duration-200 group:"
+                        href="https://www.instagram.com/ginanjar_putra22/" target="_blank" title="@ginanjar_putra22">
+                        <div class="inline-block p-1 bg-red-600 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                style="fill: rgb(255, 255, 255);">
+                                <path
+                                    d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z">
+                                </path>
+                                <circle cx="11.994" cy="11.979" r="3.003"></circle>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight text-black1 group-hover:text-white">Instagram</span>
+                    </a>
+                </div>
+
+                <!-- Github -->
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="1100"
+                    class="w-auto p-1.5  animate-bounce ">
+                    <a class="flex items-center px-6 py-2.5 bg-white  border border-gray-300 rounded-full transition duration-200 hover:shadow-lg"
+                        href="https://github.com/GinanjarPutra22" target="_blank" title="GinanjarPutra22">
+                        <div class="inline-block">
+                            <svg class="mr-1.5" width="22" height="22" viewbox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11 1.83333C5.93739 1.83333 1.83333 5.93739 1.83333 11C1.83333 16.0626 5.93739 20.1667 11 20.1667C16.0626 20.1667 20.1667 16.0626 20.1667 11C20.1667 5.93739 16.0626 1.83333 11 1.83333ZM0 11C0 4.92488 4.92488 0 11 0C17.0751 0 22 4.92488 22 11C22 17.0751 17.0751 22 11 22C4.92488 22 0 17.0751 0 11Z"
+                                    fill="black"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.7921 20.8414C8.70341 20.7269 8.70341 19.7073 8.7921 17.7826C7.84248 17.8155 7.24252 17.7495 6.99223 17.585C6.61671 17.3381 6.24083 16.5766 5.90726 16.04C5.57373 15.5034 4.83348 15.4186 4.53453 15.2986C4.23559 15.1786 4.16055 14.6896 5.35827 15.0595C6.55594 15.4293 6.61438 16.4364 6.99223 16.6719C7.37003 16.9074 8.27336 16.8043 8.68279 16.6157C9.09226 16.427 9.0621 15.7246 9.13512 15.4464C9.22743 15.1866 8.9021 15.129 8.89495 15.1269C8.49519 15.1269 6.39529 14.6702 5.81853 12.6367C5.24171 10.6033 5.98472 9.27418 6.38108 8.70283C6.64536 8.3219 6.62198 7.5101 6.31096 6.26733C7.44011 6.12305 8.31149 6.47844 8.92506 7.3336C8.92566 7.3385 9.72948 6.8556 10.9999 6.8556C12.2703 6.8556 12.7209 7.24895 13.0688 7.3336C13.4166 7.41825 13.6948 5.83668 15.8429 6.26733C15.3944 7.1488 15.0188 8.25027 15.3055 8.70283C15.5922 9.15538 16.7172 10.5945 16.0261 12.6367C15.5654 13.9983 14.6597 14.8284 13.309 15.1269C13.1542 15.1763 13.0767 15.2561 13.0767 15.3661C13.0767 15.5311 13.2861 15.5491 13.5877 16.3222C13.7889 16.8376 13.8034 18.3097 13.6313 20.7384C13.1954 20.8494 12.8564 20.9239 12.6141 20.962C12.1844 21.0295 11.7179 21.0673 11.2596 21.0819C10.8013 21.0966 10.6421 21.0949 10.0084 21.0359C9.58598 20.9966 9.18054 20.9318 8.7921 20.8414Z"
+                                    fill="black"></path>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight">Github</span>
+                    </a>
+                </div>
+
+                <!-- Medium -->
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="1400"
+                    class="w-auto p-1.5  animate-bounce ">
+                    <a class="flex items-center px-6 py-2.5 bg-white hover:shadow-lg border border-gray-300 rounded-full transition duration-200"
+                        href="https://medium.com/@GinanjarPutra22" target="_blank" title="@GinanjarPutra22">
+                        <div class="inline-block">
+                            <svg class="mr-1.5" width="20" height="20" viewbox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 0.375C4.68477 0.375 0.375 4.68477 0.375 10C0.375 15.3152 4.68477 19.625 10 19.625C15.3152 19.625 19.625 15.3152 19.625 10C19.625 4.68477 15.3152 0.375 10 0.375ZM15.5 5.82559L14.6234 6.66562C14.5461 6.72363 14.5096 6.81816 14.5246 6.91055V13.0916C14.5096 13.1861 14.5461 13.2807 14.6234 13.3365L15.4828 14.1766V14.3635H11.1688V14.1852L12.0561 13.3236C12.1441 13.2355 12.1441 13.2098 12.1441 13.0787V8.07715L9.67344 14.342H9.34043L6.46582 8.07715V12.2773C6.44004 12.4535 6.50234 12.6318 6.62695 12.7586L7.78281 14.1572V14.3441H4.5V14.1572L5.65586 12.7586C5.71676 12.6957 5.76208 12.6194 5.7882 12.5358C5.81431 12.4523 5.82049 12.3637 5.80625 12.2773V7.42188C5.82129 7.28652 5.76973 7.15547 5.6666 7.06309L4.63965 5.82559V5.63867H7.83008L10.2922 11.042L12.46 5.64297H15.5V5.82559Z"
+                                    fill="#464646"></path>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight">Medium</span>
+                    </a>
+                </div>
+
+                <!-- Dribble -->
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="1700"
+                    class="w-auto p-1.5  animate-bounce ">
+                    <a class="flex items-center px-6 py-2.5 bg-white hover:shadow-lg border border-gray-300 rounded-full transition duration-200"
+                        href="https://dribbble.com/Ginanjar_Putra" target="_blank" title="Ginanjar_Putra">
+                        <div class="inline-block">
+                            <svg class="mr-1.5" width="20" height="20" viewbox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.5041 6.05332C12.8679 5.4873 12.1041 5.08393 11.2779 4.87776C10.4517 4.67159 9.58786 4.66877 8.76035 4.86953C8.90645 5.06504 9.8668 6.37129 10.7326 7.96328C12.6125 7.25859 13.4074 6.18867 13.5041 6.05332ZM10.9023 10.8766C7.92246 11.9143 6.85039 13.9832 6.75586 14.1766C7.65176 14.8748 8.77754 15.2916 10 15.2916C10.7326 15.2916 11.4309 15.1434 12.0646 14.8727C11.9852 14.4086 11.6801 12.793 10.9367 10.8637L10.9023 10.8766ZM11.9271 10.6209C12.6189 12.5201 12.9004 14.067 12.9541 14.3893C14.14 13.5879 14.9844 12.3182 15.2186 10.8465C15.0381 10.7906 13.5836 10.3566 11.9271 10.6209ZM10 0.375C4.68477 0.375 0.375 4.68477 0.375 10C0.375 15.3152 4.68477 19.625 10 19.625C15.3152 19.625 19.625 15.3152 19.625 10C19.625 4.68477 15.3152 0.375 10 0.375ZM10 16.1875C6.58828 16.1875 3.8125 13.4117 3.8125 10C3.8125 6.58828 6.58828 3.8125 10 3.8125C13.4117 3.8125 16.1875 6.58828 16.1875 10C16.1875 13.4117 13.4117 16.1875 10 16.1875ZM11.1408 8.74961C11.2633 9.00098 11.3814 9.25664 11.491 9.51445C11.5297 9.60469 11.5684 9.69492 11.6049 9.7873C13.3623 9.56602 15.1111 9.92051 15.2852 9.95703C15.2744 8.70879 14.8275 7.56367 14.0928 6.66348C13.9789 6.81602 13.0937 7.95254 11.1408 8.74961ZM9.71211 8.28125C8.83555 6.72363 7.89238 5.41523 7.75273 5.22402C6.27461 5.92227 5.16816 7.28437 4.82656 8.92363C5.06289 8.92793 7.24141 8.93867 9.71211 8.28125ZM10.3695 10.0537C10.4383 10.0322 10.507 10.0107 10.5779 9.99141C10.4447 9.69063 10.3008 9.38984 10.1504 9.09551C7.51211 9.88613 4.94902 9.85176 4.71914 9.84746C4.71699 9.90117 4.71699 9.95488 4.71699 10.0086C4.71699 11.3664 5.23047 12.6061 6.0748 13.5428C6.19297 13.3365 7.64316 10.9346 10.3695 10.0537Z"
+                                    fill="#D75285"></path>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight">Dribble</span>
+                    </a>
+                </div>
+
+                <!-- Youtube -->
+                <!-- <div class="w-auto p-1.5">
+                    <a class="flex items-center px-6 py-2.5 bg-white hover:bg-gray-100 border border-gray-300 rounded-full transition duration-200"
+                        href="#">
+                        <div class="inline-block">
+                            <svg class="mr-1.5" width="22" height="22" viewbox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.7628 10.8162L10.2922 9.66344C10.0766 9.56334 9.89945 9.67554 9.89945 9.91424V12.0856C9.89945 12.3243 10.0766 12.4365 10.2922 12.3364L12.7617 11.1836C12.9784 11.0824 12.9784 10.9174 12.7628 10.8162ZM10.9995 0.439941C5.16725 0.439941 0.439453 5.16774 0.439453 10.9999C0.439453 16.8321 5.16725 21.5599 10.9995 21.5599C16.8317 21.5599 21.5595 16.8321 21.5595 10.9999C21.5595 5.16774 16.8317 0.439941 10.9995 0.439941ZM10.9995 15.2899C5.59405 15.2899 5.49945 14.8026 5.49945 10.9999C5.49945 7.19724 5.59405 6.70994 10.9995 6.70994C16.4049 6.70994 16.4995 7.19724 16.4995 10.9999C16.4995 14.8026 16.4049 15.2899 10.9995 15.2899Z"
+                                    fill="#F60D19"></path>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight">YouTube</span>
+                    </a>
+                </div> -->
+
+
+                <!-- Twitter -->
+                <!-- <div class="w-auto p-1.5">
+                    <a class="flex items-center px-6 py-2.5 bg-white hover:bg-gray-100 border border-gray-300 rounded-full transition duration-200"
+                        href="#">
+                        <div class="inline-block">
+                            <svg class="mr-1.5" width="22" height="22" viewbox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9995 0.439941C5.16725 0.439941 0.439453 5.16774 0.439453 10.9999C0.439453 16.8321 5.16725 21.5599 10.9995 21.5599C16.8317 21.5599 21.5595 16.8321 21.5595 10.9999C21.5595 5.16774 16.8317 0.439941 10.9995 0.439941ZM15.295 9.09034C15.2994 9.18054 15.3005 9.27074 15.3005 9.35874C15.3005 12.1087 13.2094 15.2778 9.38355 15.2778C8.25308 15.2797 7.14612 14.955 6.19575 14.3428C6.35745 14.3626 6.52355 14.3703 6.69185 14.3703C7.66645 14.3703 8.56295 14.0392 9.27465 13.4804C8.84094 13.4719 8.42069 13.3283 8.07247 13.0696C7.72426 12.8109 7.46543 12.45 7.33205 12.0372C7.64352 12.0965 7.96439 12.0841 8.27035 12.0009C7.79961 11.9057 7.37627 11.6507 7.07213 11.279C6.76799 10.9073 6.60177 10.4418 6.60165 9.96154V9.93624C6.88215 10.0913 7.20335 10.1859 7.54435 10.1969C7.10303 9.90316 6.79062 9.45188 6.671 8.93539C6.55139 8.41889 6.63361 7.87622 6.90085 7.41834C7.4233 8.06074 8.07484 8.58626 8.81328 8.96088C9.55172 9.3355 10.3606 9.55087 11.1876 9.59304C11.0824 9.14678 11.1277 8.67829 11.3163 8.2604C11.5049 7.8425 11.8262 7.49863 12.2304 7.28223C12.6346 7.06583 13.099 6.98904 13.5513 7.06378C14.0037 7.13852 14.4187 7.36062 14.7318 7.69554C15.1972 7.60344 15.6436 7.4327 16.0518 7.19064C15.8966 7.67259 15.5718 8.08183 15.1377 8.34234C15.55 8.29268 15.9526 8.18183 16.3323 8.01344C16.0534 8.43132 15.7021 8.79602 15.295 9.09034Z"
+                                    fill="#60ACEC"></path>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight">Twitter</span>
+                    </a>
+                </div> -->
+
+                <!-- Discord -->
+                <!-- <div class="w-auto p-1.5">
+                    <a class="flex items-center px-6 py-2.5 bg-white hover:bg-gray-100 border border-gray-300 rounded-full transition duration-200"
+                        href="#">
+                        <div class="inline-block">
+                            <svg class="mr-1.5" width="22" height="22" viewbox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11" cy="11" r="11" fill="#4B59EF"></circle>
+                                <path
+                                    d="M16.0446 7.33128C15.2133 6.94378 14.3133 6.66253 13.3758 6.50003C13.3676 6.49977 13.3594 6.50131 13.3519 6.50455C13.3443 6.50779 13.3375 6.51265 13.3321 6.51878C13.2196 6.72503 13.0883 6.99378 13.0008 7.20003C12.0064 7.05003 10.9952 7.05003 10.0008 7.20003C9.91331 6.98753 9.78206 6.72503 9.66331 6.51878C9.65706 6.50628 9.63831 6.50003 9.61956 6.50003C8.68206 6.66253 7.78831 6.94378 6.95081 7.33128C6.94456 7.33128 6.93831 7.33753 6.93206 7.34378C5.23206 9.88753 4.76331 12.3625 4.99456 14.8125C4.99456 14.825 5.00081 14.8375 5.01331 14.8438C6.13831 15.6688 7.21956 16.1688 8.28831 16.5C8.30706 16.5063 8.32581 16.5 8.33206 16.4875C8.58206 16.1438 8.80706 15.7813 9.00081 15.4C9.01331 15.375 9.00081 15.35 8.97581 15.3438C8.61956 15.2063 8.28206 15.0438 7.95081 14.8563C7.92581 14.8438 7.92581 14.8063 7.94456 14.7875C8.01331 14.7375 8.08206 14.6813 8.15081 14.6313C8.16331 14.6188 8.18206 14.6188 8.19456 14.625C10.3446 15.6063 12.6633 15.6063 14.7883 14.625C14.8008 14.6188 14.8196 14.6188 14.8321 14.6313C14.9008 14.6875 14.9696 14.7375 15.0383 14.7938C15.0633 14.8125 15.0633 14.85 15.0321 14.8625C14.7071 15.0563 14.3633 15.2125 14.0071 15.35C13.9821 15.3563 13.9758 15.3875 13.9821 15.4063C14.1821 15.7875 14.4071 16.15 14.6508 16.4938C14.6696 16.5 14.6883 16.5063 14.7071 16.5C15.7821 16.1688 16.8633 15.6688 17.9883 14.8438C18.0008 14.8375 18.0071 14.825 18.0071 14.8125C18.2821 11.9813 17.5508 9.52503 16.0696 7.34378C16.0633 7.33753 16.0571 7.33128 16.0446 7.33128ZM9.32581 13.3188C8.68206 13.3188 8.14456 12.725 8.14456 11.9938C8.14456 11.2625 8.66956 10.6688 9.32581 10.6688C9.98831 10.6688 10.5133 11.2688 10.5071 11.9938C10.5071 12.725 9.98206 13.3188 9.32581 13.3188ZM13.6821 13.3188C13.0383 13.3188 12.5008 12.725 12.5008 11.9938C12.5008 11.2625 13.0258 10.6688 13.6821 10.6688C14.3446 10.6688 14.8696 11.2688 14.8633 11.9938C14.8633 12.725 14.3446 13.3188 13.6821 13.3188Z"
+                                    fill="white"></path>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight">Discord</span>
+                    </a>
+                </div> -->
+
+                <!-- Spotify -->
+                <!-- <div class="w-auto p-1.5">
+                    <a class="flex items-center px-6 py-2.5 bg-white hover:bg-gray-100 border border-gray-300 rounded-full transition duration-200"
+                        href="#">
+                        <div class="inline-block">
+                            <svg class="mr-1.5" width="20" height="20" viewbox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.0007 0.833496C15.0634 0.833496 19.1673 4.93741 19.1673 10.0002C19.1673 15.0629 15.0634 19.1668 10.0007 19.1668C4.9379 19.1668 0.833984 15.0629 0.833984 10.0002C0.833984 4.93741 4.9379 0.833496 10.0007 0.833496ZM10.0007 2.66683C8.05573 2.66683 6.19047 3.43945 4.8152 4.81471C3.43993 6.18998 2.66732 8.05524 2.66732 10.0002C2.66732 11.9451 3.43993 13.8103 4.8152 15.1856C6.19047 16.5609 8.05573 17.3335 10.0007 17.3335C11.9456 17.3335 13.8108 16.5609 15.1861 15.1856C16.5614 13.8103 17.334 11.9451 17.334 10.0002C17.334 8.05524 16.5614 6.18998 15.1861 4.81471C13.8108 3.43945 11.9456 2.66683 10.0007 2.66683ZM6.08465 11.9352C7.38448 11.6364 8.77507 11.6401 9.97773 11.8262C11.1474 12.0077 12.2822 12.3853 12.9817 12.9573C13.163 13.1046 13.2813 13.3156 13.3123 13.5472C13.3433 13.7788 13.2847 14.0135 13.1485 14.2033C13.0123 14.3932 12.8087 14.5238 12.5794 14.5686C12.35 14.6133 12.1123 14.5688 11.9147 14.4442L11.8212 14.3772C11.4948 14.1096 10.7413 13.7997 9.69632 13.6384C8.6834 13.4807 7.53115 13.4844 6.49532 13.7218C6.37738 13.7506 6.2549 13.7556 6.13499 13.7367C6.01509 13.7177 5.90015 13.6751 5.79684 13.6113C5.69353 13.5476 5.60391 13.464 5.53318 13.3653C5.46246 13.2666 5.41203 13.1549 5.38484 13.0366C5.35764 12.9183 5.35422 12.7958 5.37476 12.6761C5.39531 12.5565 5.43941 12.4421 5.50452 12.3396C5.56962 12.2372 5.65443 12.1487 5.75402 12.0792C5.85361 12.0098 5.96599 11.9609 6.08465 11.9352ZM5.60798 9.43183C8.5954 8.59858 12.0705 9.06975 14.1907 10.3714C14.398 10.4987 14.5462 10.7031 14.6028 10.9396C14.6593 11.1762 14.6196 11.4255 14.4923 11.6327C14.365 11.84 14.1607 11.9882 13.9241 12.0448C13.6876 12.1013 13.4382 12.0616 13.231 11.9343C11.5966 10.9306 8.65682 10.4851 6.09932 11.1973C5.98222 11.2335 5.85904 11.2459 5.73708 11.2337C5.61513 11.2214 5.49686 11.1849 5.38928 11.1261C5.2817 11.0674 5.18699 10.9877 5.11076 10.8917C5.03453 10.7957 4.97832 10.6854 4.94546 10.5673C4.9126 10.4492 4.90375 10.3258 4.91944 10.2042C4.93513 10.0826 4.97504 9.96547 5.03681 9.8596C5.09858 9.75373 5.18096 9.66133 5.27906 9.58785C5.37717 9.51438 5.48902 9.46132 5.60798 9.43183ZM5.16982 6.80466C8.61648 5.84216 12.0402 6.34175 14.947 7.59666C15.1682 7.69433 15.3419 7.87547 15.4302 8.10063C15.5185 8.32578 15.5142 8.57671 15.4183 8.79873C15.3224 9.02075 15.1427 9.19588 14.9182 9.28596C14.6938 9.37605 14.4428 9.37378 14.2201 9.27966C11.6259 8.15858 8.6339 7.7415 5.66298 8.57016C5.54638 8.60481 5.42404 8.6159 5.3031 8.60279C5.18216 8.58968 5.06505 8.55263 4.95857 8.4938C4.8521 8.43497 4.7584 8.35554 4.68294 8.26013C4.60747 8.16472 4.55175 8.05524 4.51902 7.93808C4.4863 7.82092 4.47722 7.69842 4.49231 7.57771C4.50741 7.45701 4.54638 7.34051 4.60695 7.23502C4.66752 7.12953 4.74849 7.03715 4.84512 6.96326C4.94176 6.88937 5.05213 6.83546 5.16982 6.80466Z"
+                                    fill="#69F285"></path>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight">Spotify</span>
+                    </a>
+                </div> -->
+
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+    <!-- ====== Start Blog ====== -->
+
+
+
+
+    <!-- ====== Footer Section Start -->
+
+    <footer class="relative z-10 drop-shadow-md  pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+        <div class="container mx-auto">
+            <div class="lg:flex lg:justify-between">
+                <div class="mb-10 md:mb-0">
+                    <a href="#" class="mb-4 text-2xl font-bold">GinanjarPutra</a>
+                    <p class="text-base text-body-color "> Don't wait for the perfect moment; take the moment and make
+                        it
+                        perfect 🚀</p>
+                </div>
+
+                <div class="">
+                    <div class="flex-col items-end justify-end gap-4">
+                        <h4 class="mb-2 text-lg font-semibold text-dark">Quick Link</h4>
+                        <ul class="flex gap-4">
+                            <li>
+                                <a href="#home"
+                                    class="inline-block mb-2 text-base leading-loose text-body-color hover:text-primary">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about"
+                                    class="inline-block mb-2 text-base leading-loose text-body-color hover:text-primary">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#portfolio"
+                                    class="inline-block mb-2 text-base leading-loose text-body-color hover:text-primary">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#blog"
+                                    class="inline-block mb-2 text-base leading-loose text-body-color hover:text-primary">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact"
+                                    class="inline-block mb-2 text-base leading-loose text-body-color hover:text-primary">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+    <!-- Don't wait for the perfect moment; take the moment and make it perfect. -->
+    <!-- ====== Footer Section End -->
+    <script src="../dist/js/script.js"></script>
+
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
