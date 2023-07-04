@@ -22,7 +22,7 @@
     <!-- ====== Navbar Section Start -->
     <div id="home" class="">
 
-        <header x-data="{ navbarOpen: false }
+        <header data-aos="fade-down" data-aos-duration="600" data-aos-delay="300" x-data="{ navbarOpen: false }
         " class="absolute inset-x-0 top-0 z-50 flex items-center w-full ">
             <div class="container mx-auto">
                 <div class="relative flex items-center justify-between -mx-4">
@@ -105,28 +105,36 @@
         </div>
         <div class="max-w-2xl py-24 mx-auto lg:py-32">
             <div class="py-4 mt-4 mb-9 sm:mb-12 sm:flex sm:justify-center">
-                <div
-                    class="relative p-2 text-sm leading-6 text-center rounded-lg animate-bounce ring-1 ring-gray-900/10 hover:ring-sky-900 hover:text-gray-700 focus:ring-red-600 text-slate-500 hover:text-slate-700">
-                    New Blog: Mengenal apa itu UI/UX Design
+                <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="300"
+                    class="relative p-2 text-sm leading-6 text-center rounded-lg md:w-2/5 animate-bounce ring-1 ring-gray-900/10 hover:shadow-lg focus:ring-red-600 text-slate-500 hover:text-slate-700">
+                    <div class="flex flex-col items-center justify-center gap-2 md:py-5 md:flex-row md:block">
+                        <p> New Blog: Mengenal apa itu UI/UX Design</p>
 
-                    <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
-                        target="_blank" class="font-medium text-primary"><span class="absolute inset-0"
-                            aria-hidden="true"></span>Read
-                        more <span aria-hidden="true">&rarr;</span></a>
+
+                        <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
+                            target="_blank" class="font-medium text-primary"><span class="absolute inset-0"
+                                aria-hidden="true"></span>Read
+                            more <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+
                 </div>
             </div>
             <!-- TEXT -->
             <div class="text-center">
-                <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Hello, I'm Ginanjar
+                <h1 data-aos="fade-up" data-aos-duration="600" data-aos-delay="300"
+                    class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Hello, I'm Ginanjar
                     <span class="animate-pulse ">👋</span>
                 </h1>
-                <h1 class="text-2xl font-bold tracking-tight text-gray-800 sm:text-4xl">
+                <h1 data-aos="fade-up" data-aos-duration="600" data-aos-delay="500"
+                    class="text-2xl font-bold tracking-tight text-gray-800 sm:text-4xl">
                     UI/UX Enthusiast & Currently studying web programming</h1>
-                <p class="mt-6 text-lg leading-8 text-gray-600">
+                <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="600"
+                    class="mt-6 text-lg leading-8 text-gray-600">
                     A learner UI/UX Designer and creative Web Developer who creates engaging and functional
                     digital experiences for users.
                 </p>
-                <div class="flex items-center justify-center mt-2 mb-16 md:mt-4 gap-x-6 ">
+                <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="600"
+                    class="flex items-center justify-center mt-2 mb-16 md:mt-4 gap-x-6 ">
 
 
                     <a href="https://drive.google.com/file/d/1CjEyRM75h_YyhljvOTyhsTXtPl1fqYwz/view?usp=sharing"
@@ -704,7 +712,7 @@
             const swiper = new Swiper('.swiper-container', {
                 loop: true,
                 slidesPerView: 1,
-                spaceBetween: 32,
+                spaceBetween: 28,
                 autoplay: {
                     delay: 5000,
                 },
@@ -714,7 +722,7 @@
                 },
                 breakpoints: {
                     360: {
-                        slidesPerView: 1.5,
+                        slidesPerView: 1.4,
                         centeredSlides: true,
                     },
                     640: {
@@ -777,7 +785,7 @@
         </div>
         </div>
 
-        <div class="relative max-w-4xl mx-auto ">
+        <div class="max-w-4xl mx-auto my-9">
 
             <div class="flex flex-wrap justify-center -m-4">
 
@@ -966,24 +974,27 @@
     </section>
     <!-- ====== Start Blog ====== -->
 
-
-
+    <br><br>
 
     <!-- ====== Footer Section Start -->
 
-    <footer class="relative z-10 drop-shadow-md  pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+    <footer class="z-10 py-12 my-12 drop-shadow-md">
         <div class="container mx-auto">
             <div class="lg:flex lg:justify-between">
-                <div class="mb-10 md:mb-0">
-                    <a href="#" class="mb-4 text-2xl font-bold">GinanjarPutra</a>
-                    <p class="text-base text-body-color "> Don't wait for the perfect moment; take the moment and make
+                <div class="mb-10 ">
+                    <a data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" href="#"
+                        class="mb-2 text-2xl font-bold">GinanjarPutra</a>
+
+                    <p class="mt-3 text-base text-body-color "> Don't wait for the perfect moment; take the moment and
+                        make
                         it
                         perfect 🚀</p>
                 </div>
 
-                <div class="">
+                <div class="mb-10 md:mb-0">
                     <div class="flex-col items-end justify-end gap-4">
-                        <h4 class="mb-2 text-lg font-semibold text-dark">Quick Link</h4>
+                        <h4 data-aos="fade-up" data-aos-duration="600" data-aos-delay="150"
+                            class="mb-2 text-lg font-semibold text-dark">Quick Link</h4>
                         <ul class="flex gap-4">
                             <li>
                                 <a href="#home"
@@ -1026,7 +1037,7 @@
 
     </footer>
 
-
+    <div class="py-9"></div>
 
 
 
