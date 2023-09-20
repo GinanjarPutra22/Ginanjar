@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  mode: 'jit',
   theme: {
     extend: {
       fontFamily:{
@@ -19,6 +20,6 @@ module.exports = {
       }
     },
   },
-  plugins: [require("tailgrids/plugin", ''),],
+  plugins: [require("tailgrids/plugin", ''), require("tw-elements/dist/plugin.cjs")],
 }
 

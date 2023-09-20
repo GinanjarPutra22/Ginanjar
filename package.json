@@ -1,1 +1,1 @@
-{"scripts":{"dev":"npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"},"devDependencies":{"tailwindcss":"^3.3.2"},"dependencies":{"tailgrids":"^2.0.1"}}
+{"scripts":{"dev":"npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"},"devDependencies":{"tailwindcss":"^3.3.2"},"dependencies":{"tailgrids":"^2.0.1","tw-elements":"^1.0.0"}}

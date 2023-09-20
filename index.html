@@ -35,13 +35,13 @@
                         <div>
                             <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive' "
                                 id="navbarToggler"
-                                class=" absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px]  lg:hidden">
+                                class=" absolute right-4 top-1/2 block -translate-y-1/2 rounded-md px-3 py-[6px]  lg:hidden">
                                 <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
                                 <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
                                 <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
                             </button>
                             <nav :class="!navbarOpen && 'hidden' " id="navbarCollapse"
-                                class="absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white/90 md:bg-transparent py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none justify-between items-center">
+                                class="absolute right-4 top-full w-full max-w-[250px] rounded-md bg-white/90 md:bg-transparent py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none justify-between items-center">
 
 
                                 <div class="w-full lg:flex lg:justify-between lg:items-center gap-36 ">
@@ -82,7 +82,7 @@
 
                                         <a href="https://drive.google.com/file/d/1tYojJ_0mlaeImvE9kCQ-LFb8F-tCplsa/view?usp=sharing"
                                             target="_blank"
-                                            class="px-8 py-3 text-sm font-medium text-white rounded-lg lg:px-4 bg-primary hover:bg-opacity-90">
+                                            class="px-8 py-3 text-sm font-medium text-white rounded-md lg:px-4 bg-primary hover:bg-opacity-90">
                                             Download my CV
                                         </a>
                                     </div>
@@ -106,7 +106,7 @@
         <div class="max-w-2xl py-24 mx-auto lg:py-32">
             <div class="py-4 mt-4 mb-9 sm:mb-12 sm:flex sm:justify-center">
                 <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="300"
-                    class="relative p-2 text-sm leading-6 text-center rounded-lg md:w-2/5 animate-bounce ring-1 ring-gray-900/10 hover:shadow-lg focus:ring-red-600 text-slate-500 hover:text-slate-700">
+                    class="relative p-2 text-sm leading-6 text-center rounded-md md:w-2/5 animate-bounce ring-1 ring-gray-900/10 hover:shadow-lg focus:ring-red-600 text-slate-500 hover:text-slate-700">
                     <div class="flex flex-col items-center justify-center gap-2 md:py-5 md:flex-row md:block">
                         <p> New Blog: Mengenal apa itu UI/UX Design</p>
 
@@ -139,7 +139,7 @@
 
                     <a href="https://drive.google.com/file/d/1tYojJ_0mlaeImvE9kCQ-LFb8F-tCplsa/view?usp=sharing"
                         target="_blank"
-                        class="px-6 py-2 text-sm font-semibold leading-6 text-black text-gray-900 transition-all border border-transparent rounded-mdrounded-none hover:border-primary hover: hover:text-primary ">Get
+                        class="px-6 py-2 text-sm font-semibold leading-6 text-black text-gray-900 transition-all border border-transparent rounded-md rounded-mdrounded-none hover:border-primary hover: hover:text-primary hover:border-spacing-3">Get
                         my CV <span aria-hidden="true" class="text-lg">→</span></a>
                 </div>
             </div>
@@ -199,7 +199,8 @@
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-left" data-aos-delay="150" data-aos-duration="600"
+            <!-- data-aos-delay="150" data-aos-duration="600" -->
+            <div data-aos="fade-left"
                 class="p-12 -mt-12 -ml-12 overflow-x-hidden lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                 <img class="w-[48rem] max-w-none rounded-xl  shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                     src="../public/asstes/images/hero.png" alt="Test">
@@ -257,24 +258,20 @@
                                 my CV <span aria-hidden="true" class="text-lg">→</span></a>
                         </p>
 
-                        <!-- More About me -->
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quae officiis eius repellat esse
-                            nobis
-                            ratione quod amet recusandae consequatur.</p>
 
-
+                        <!-- Resume start -->
                         <section x-data="
-                            {
-                              showCards: 'edc',
-                              activeClasses: 'bg-primary text-white font-semibold ',
-                              inactiveClasses: 'text-body-color bg-slate-400 hover:bg-primary hover:text-white',
-                            }
-                        
-                          " id="portfolio" class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
+                        {
+                          showCards: 'edu',
+                          activeClasses: 'bg-primary text-white font-semibold ',
+                          inactiveClasses: 'text-body-color hover:bg-primary hover:text-white',
+                        }
+                    
+                      " id="portfolio" class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
                             <div class="container ">
                                 <div class="flex flex-wrap -mx-4">
-                                    <div class="">
-                                        <div class=" mb-[30px] max-w-[510px] ">
+                                    <div class="w-full ">
+                                        <div class="mb-[20px] max-w-[510px] ">
                                             <span data-aos="fade-up" data-aos-duration="600" data-aos-delay="150"
                                                 class="block mb-2 text-lg font-semibold text-primary">
                                                 More About Me
@@ -283,24 +280,24 @@
                                                 class="text-dark mb-4 text-3xl font-bold sm:text-2xl md:text-[40px]">
                                                 My Resume
                                             </h2>
-
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-wrap justify-center -mx-4">
                                     <div class="w-full ">
-                                        <ul class="flex flex-wrap justify-start mb-12 space-x-1">
+                                        <ul class="flex flex-wrap mb-6 space-x-1">
                                             <li data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="150"
                                                 class="mb-1">
-                                                <button @click="showCards = 'edc' "
-                                                    :class="showCards == 'edc' ? activeClasses : inactiveClasses "
+
+                                                <button @click="showCards = 'edu' "
+                                                    :class="showCards == 'edu' ? activeClasses : inactiveClasses "
                                                     class="inline-block px-5 py-2 text-base text-center transition rounded-md md:py-3 lg:px-8">
                                                     Education
                                                 </button>
                                             </li>
                                             <li data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="250"
                                                 class="mb-1">
-                                                <button @click="showCards = '' "
+                                                <button @click="showCards = 'exp' "
                                                     :class="showCards == 'exp' ? activeClasses : inactiveClasses "
                                                     class="inline-block px-5 py-2 text-base text-center transition rounded-md md:py-3 lg:px-8">
                                                     Experience
@@ -313,7 +310,6 @@
                                                     class="inline-block px-5 py-2 text-base text-center transition rounded-md md:py-3 lg:px-8">
                                                     Acivement
                                                 </button>
-                                            </li>
 
 
                                         </ul>
@@ -322,35 +318,282 @@
 
                                 <!-- Konten -->
                                 <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="450"
-                                    class="flex flex-wrap -mx-4">
+                                    class="flex flex-wrap -mx-4 ">
 
                                     <!-- ========KONTEN======== -->
 
-                                    <!-- Edu -->
-                                    <div :class="showCards == 'edc' || showCards == 'edc' ? 'block' : 'hidden' "
+                                    <!-- EDU -->
+                                    <div :class="showCards == 'all' || showCards == 'edu' ? 'block' : 'hidden' "
                                         class="w-full ">
-                                        <div class="relative mb-12">
-                                            <p>ini edu</p>
+                                        <div class="mb-6 ">
 
+                                            <section class="dark:bg-gray-800 dark:text-gray-100">
+                                                <div class="max-w-5xl py-4 ">
+                                                    <div class="grid gap-4 mx-4 sm:grid-cols-12">
+
+                                                        <div
+                                                            class="relative col-span-12 px-4 space-y-6 border-l-2 sm:col-span-10">
+                                                            <div
+                                                                class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700 opacity-10">
+                                                                <div class="content">
+                                                                    <div
+                                                                        class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                                                    </div>
+                                                                    <time
+                                                                        class="text-xs font-normal text-gray-400 tracki">Aug
+                                                                        2021 | Surabaya</time>
+
+                                                                    <h3 class="text-xl font-semibold tracki">Surabaya
+                                                                        State University </h3>
+
+
+                                                                    <p class="mt-2 text-slate-600">Information
+                                                                        Technology Education
+                                                                    </p>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div
+                                                                        class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                                                    </div>
+                                                                    <time
+                                                                        class="text-xs font-normal text-gray-400 tracki">Aug
+                                                                        2018 - Aug 2021 | Lamongan</time>
+
+                                                                    <h3 class="text-xl font-semibold tracki">MAN 2
+                                                                        Lamongan </h3>
+
+                                                                    <p class="mt-2 text-slate-600">Science
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
                                         </div>
+                                    </div>
+
+                                    <!-- EXP -->
+                                    <div :class="showCards == 'exp' || showCards == 'exp' ? 'block' : 'hidden' "
+                                        class="w-full ">
+                                        <!-- Wrok Experience -->
+                                        <div class="mb-6 ">
+                                            <h5 class="font-bold">Work Experience</h5>
+                                            <section class="dark:bg-gray-800 dark:text-gray-100">
+                                                <div class="max-w-5xl py-4 ">
+                                                    <div class="grid gap-4 mx-4 sm:grid-cols-12">
+
+                                                        <div
+                                                            class="relative col-span-12 px-4 space-y-6 border-l-2 sm:col-span-10">
+                                                            <div
+                                                                class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700 opacity-10">
+                                                                <div class="content">
+                                                                    <div
+                                                                        class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                                                    </div>
+                                                                    <time
+                                                                        class="text-xs font-normal text-gray-400 tracki">Feb
+                                                                        2023 - Jun 2023 | Tangeran, Banten</time>
+
+                                                                    <h3 class="text-xl font-semibold tracki">Torche
+                                                                        Education </h3>
+
+
+                                                                    <p class="mt-2 text-slate-600">UI Designer
+                                                                    </p>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div
+                                                                        class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                                                    </div>
+                                                                    <time
+                                                                        class="text-xs font-normal text-gray-400 tracki">Jan
+                                                                        2020 - Jun 2022| Lamongan</time>
+
+                                                                    <h3 class="text-xl font-semibold tracki">Holide Id
+                                                                    </h3>
+
+                                                                    <p class=" text-slate-600">Social Media Designer
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+
+                                        <!-- Organzation Experience -->
+                                        <div class="mb-6 ">
+                                            <h5 class="font-bold">Work Experience</h5>
+                                            <section class="dark:bg-gray-800 dark:text-gray-100">
+                                                <div class="max-w-5xl py-4 ">
+                                                    <div class="grid gap-4 mx-4 sm:grid-cols-12">
+
+                                                        <div
+                                                            class="relative col-span-12 px-4 space-y-6 border-l-2 sm:col-span-10">
+                                                            <div
+                                                                class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700 opacity-10">
+                                                                <div class="content">
+                                                                    <div
+                                                                        class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                                                    </div>
+                                                                    <time
+                                                                        class="mb-1 text-xs font-normal leading-tight text-gray-400 tracki">Mar
+                                                                        2021 - Present | Surabaya</time>
+
+                                                                    <h3 class="text-xl font-semibold tracki">Himpunan
+                                                                        Mahasiswa Jurusan Teknik Informatika UNESA </h3>
+
+
+                                                                    <p class=" text-slate-600">SEvent project department
+                                                                        staff
+                                                                    </p>
+                                                                </div>
+
+                                                                <!-- 2 -->
+                                                                <div class="content">
+                                                                    <div
+                                                                        class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                                                    </div>
+                                                                    <time
+                                                                        class="text-xs font-normal text-gray-400 tracki">Jan
+                                                                        2021 - Dec 2021 | Surabaya</time>
+
+                                                                    <h3 class="text-xl font-semibold tracki">Bidikmisi
+                                                                        Student Forum</h3>
+
+                                                                    <p class=" text-slate-600">Relations and Partnership
+                                                                        Department Staff
+                                                                    </p>
+                                                                </div>
+
+                                                                <!-- 3 -->
+                                                                <div class="content">
+                                                                    <div
+                                                                        class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                                                    </div>
+                                                                    <time
+                                                                        class="text-xs font-normal text-gray-400 tracki">Jan
+                                                                        2021 - Dec 2021 | Lamongan</time>
+
+                                                                    <h3 class="text-xl font-semibold tracki">Career and
+                                                                        Colage MAN 2 Lamongan</h3>
+
+                                                                    <p class=" text-slate-600">event coordinator
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- ACV -->
+                                    <div :class="showCards == 'acv' || showCards == 'acv' ? 'block' : 'hidden' "
+                                        class="w-full ">
+                                        <!-- Wrok Experience -->
+                                        <div class="mb-6 ">
+
+                                            <section class="dark:bg-gray-800 dark:text-gray-100">
+                                                <div class="max-w-5xl py-4 ">
+                                                    <div class="grid gap-4 mx-4 sm:grid-cols-12">
+
+                                                        <div
+                                                            class="relative col-span-12 px-4 space-y-6 border-l-2 sm:col-span-10">
+                                                            <div
+                                                                class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700 opacity-10">
+                                                                <div class="content">
+                                                                    <div
+                                                                        class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                                                    </div>
+                                                                    <time
+                                                                        class="text-xs font-normal text-gray-400 tracki">2023
+                                                                    </time>
+
+                                                                    <h3 class="text-xl font-semibold tracki">2nd Place
+                                                                        in SICOMP UI/UX Design Mobile Application
+                                                                        Competition</h3>
+
+
+                                                                    <p class="mt-2 text-slate-600">National University
+                                                                    </p>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div
+                                                                        class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                                                    </div>
+                                                                    <time
+                                                                        class="text-xs font-normal text-gray-400 tracki">2023</time>
+
+                                                                    <h3 class="text-xl font-semibold tracki">Favorite
+                                                                        Startup Competition Champion
+                                                                    </h3>
+
+                                                                    <p class=" text-slate-600">GENBI Unesa
+                                                                    </p>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div
+                                                                        class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                                                    </div>
+                                                                    <time
+                                                                        class="text-xs font-normal text-gray-400 tracki">2021</time>
+
+                                                                    <h3 class="text-xl font-semibold tracki">2nd Place
+                                                                        in LKTIN Cone
+                                                                    </h3>
+
+                                                                    <p class=" text-slate-600">UINMA Malang
+                                                                    </p>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div
+                                                                        class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                                                    </div>
+                                                                    <time
+                                                                        class="text-xs font-normal text-gray-400 tracki">2021</time>
+
+                                                                    <h3 class="text-xl font-semibold tracki">Best
+                                                                        Presentation
+                                                                        in LKTIN Cone
+                                                                    </h3>
+
+                                                                    <p class=" text-slate-600">UINMA Malang
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+
+                                    </div>
+
+                                </div>
                         </section>
+
+                        <!-- resume end -->
+
                     </div>
                 </div>
 
-                <!-- DigiSKill -->
-                <div :class="showCards == 'exp' || showCards == 'exp' ? 'block' : 'hidden' " class="w-full ">
-                    <div class="relative mb-12">
-                        <p>ini pengalaman</p>
-                    </div>
-                </div>
 
-                <!-- WEBKUY -->
-                <div :class="showCards == 'acv' || showCards == 'acv' ? 'block' : 'hidden' " class="w-full ">
-                    <div class="relative mb-12">
-                        <!-- component -->
-                        <p>ini award</p>
-                    </div>
-                </div>
 
 
 
@@ -362,10 +605,14 @@
         </section>
 
 
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    </div>
     </div>
 
     <!-- End About -->
@@ -380,7 +627,7 @@
     <section x-data="
         {
           showCards: 'all',
-          activeClasses: 'bg-primary text-white',
+          activeClasses: 'bg-primary text-white font-semibold ',
           inactiveClasses: 'text-body-color hover:bg-primary hover:text-white',
         }
     
@@ -410,28 +657,28 @@
                         <li data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="150" class="mb-1">
                             <button @click="showCards = 'all' "
                                 :class="showCards == 'all' ? activeClasses : inactiveClasses "
-                                class="inline-block px-5 py-2 text-base font-semibold text-center transition rounded-lg md:py-3 lg:px-8">
+                                class="inline-block px-5 py-2 text-base text-center transition rounded-md md:py-3 lg:px-8">
                                 All Projects
                             </button>
                         </li>
                         <li data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="250" class="mb-1">
                             <button @click="showCards = 'uiux' "
                                 :class="showCards == 'uiux' ? activeClasses : inactiveClasses "
-                                class="inline-block px-5 py-2 text-base font-semibold text-center transition rounded-lg md:py-3 lg:px-8">
+                                class="inline-block px-5 py-2 text-base text-center transition rounded-md md:py-3 lg:px-8">
                                 UI/UX Design
                             </button>
                         </li>
                         <li data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="350" class="mb-1">
                             <button @click="showCards = 'code' "
                                 :class="showCards == 'code' ? activeClasses : inactiveClasses "
-                                class="inline-block px-5 py-2 text-base font-semibold text-center transition rounded-lg md:py-3 lg:px-8">
+                                class="inline-block px-5 py-2 text-base text-center transition rounded-md md:py-3 lg:px-8">
                                 Code
                             </button>
                         </li>
                         <li data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="450" class="mb-1">
                             <button @click="showCards = 'design' "
                                 :class="showCards == 'design' ? activeClasses : inactiveClasses "
-                                class="inline-block px-5 py-2 text-base font-semibold text-center transition rounded-lg md:py-3 lg:px-8">
+                                class="inline-block px-5 py-2 text-base text-center transition rounded-md md:py-3 lg:px-8">
                                 Design
                             </button>
                         </li>
@@ -449,11 +696,11 @@
                 <div :class="showCards == 'all' || showCards == 'uiux' ? 'block' : 'hidden' "
                     class="w-full px-4 md:w-1/2 xl:w-1/3">
                     <div class="relative mb-12">
-                        <div class="overflow-hidden rounded-lg">
+                        <div class="overflow-hidden rounded-md">
                             <img src="../public/asstes/images/portfolio/WetQoe (2).png" alt="portfolio"
                                 class="w-full" />
                         </div>
-                        <div class="relative z-10 px-4 -mt-24 text-center bg-white rounded-lg shadow-lg py-9 mx-7">
+                        <div class="relative z-10 px-4 -mt-24 text-center bg-white rounded-md shadow-lg py-9 mx-7">
                             <span class="block mb-2 text-sm font-semibold text-primary">
                                 UI/UX Design
                             </span>
@@ -472,10 +719,10 @@
                 <div :class="showCards == 'all' || showCards == 'code' ? 'block' : 'hidden' "
                     class="w-full px-4 md:w-1/2 xl:w-1/3">
                     <div class="relative mb-12">
-                        <div class="overflow-hidden rounded-lg">
+                        <div class="overflow-hidden rounded-md">
                             <img src="../public/asstes/images/portfolio/DigiSkill.png" alt="portfolio" class="w-full" />
                         </div>
-                        <div class="relative z-10 px-4 -mt-24 text-center bg-white rounded-lg shadow-lg py-9 mx-7">
+                        <div class="relative z-10 px-4 -mt-24 text-center bg-white rounded-md shadow-lg py-9 mx-7">
                             <span class="block mb-2 text-sm font-semibold text-primary">
                                 Code
                             </span>
@@ -494,10 +741,10 @@
                 <div :class="showCards == 'all' || showCards == 'code' ? 'block' : 'hidden' "
                     class="w-full px-4 md:w-1/2 xl:w-1/3">
                     <div class="relative mb-12">
-                        <div class="overflow-hidden rounded-lg">
+                        <div class="overflow-hidden rounded-md">
                             <img src="../public/asstes/images/portfolio/WebKuy.png" alt="portfolio" class="w-full" />
                         </div>
-                        <div class="relative z-10 px-4 -mt-24 text-center bg-white rounded-lg shadow-lg py-9 mx-7">
+                        <div class="relative z-10 px-4 -mt-24 text-center bg-white rounded-md shadow-lg py-9 mx-7">
                             <span class="block mb-2 text-sm font-semibold text-primary">
                                 Code
                             </span>
@@ -515,11 +762,11 @@
                 <div :class="showCards == 'all' || showCards == 'uiux' ? 'block' : 'hidden' "
                     class="w-full px-4 md:w-1/2 xl:w-1/3">
                     <div class="relative mb-12">
-                        <div class="overflow-hidden rounded-lg">
+                        <div class="overflow-hidden rounded-md">
                             <img src="../public/asstes/images/portfolio/Holide-Project.png" alt="portfolio"
                                 class="w-full" />
                         </div>
-                        <div class="relative z-10 px-4 -mt-24 text-center bg-white rounded-lg shadow-lg py-9 mx-7">
+                        <div class="relative z-10 px-4 -mt-24 text-center bg-white rounded-md shadow-lg py-9 mx-7">
                             <span class="block mb-2 text-sm font-semibold text-primary">
                                 UI/UX Design
                             </span>
@@ -593,13 +840,13 @@
                     <div class="pt-4 swiper-wrapper">
                         <div class="swiper-slide">
                             <article
-                                class="max-w-md mx-auto overflow-hidden bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl">
+                                class="max-w-md mx-auto overflow-hidden bg-white rounded-md drop-shadow-md hover:drop-shadow-xl">
                                 <div class="p-4">
                                     <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
                                         target="_blank">
                                         <div class="rounded-2xl">
                                             <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qLlNDTNJmmU6eKKJWzREKQ.png"
-                                                class="object-cover rounded-lg aspect-video " alt="" />
+                                                class="object-cover rounded-md aspect-video " alt="" />
                                         </div>
                                         <div class="mt-2">
                                             <time class="text-xs leading-tight md:text-sm text-black2">2 Mar 2023</time>
@@ -628,13 +875,13 @@
                         </div>
                         <div class="swiper-slide">
                             <article
-                                class="max-w-md mx-auto overflow-hidden bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl">
+                                class="max-w-md mx-auto overflow-hidden bg-white rounded-md drop-shadow-md hover:drop-shadow-xl">
                                 <div class="p-4">
                                     <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
                                         target="_blank">
                                         <div class="rounded-2xl">
                                             <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qLlNDTNJmmU6eKKJWzREKQ.png"
-                                                class="object-cover rounded-lg aspect-video " alt="" />
+                                                class="object-cover rounded-md aspect-video " alt="" />
                                         </div>
                                         <div class="mt-2">
                                             <time class="text-xs leading-tight md:text-sm text-black2">2 Mar 2023</time>
@@ -663,13 +910,13 @@
                         </div>
                         <div class="swiper-slide">
                             <article
-                                class="max-w-md mx-auto overflow-hidden bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl">
+                                class="max-w-md mx-auto overflow-hidden bg-white rounded-md drop-shadow-md hover:drop-shadow-xl">
                                 <div class="p-4">
                                     <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
                                         target="_blank">
                                         <div class="rounded-2xl">
                                             <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qLlNDTNJmmU6eKKJWzREKQ.png"
-                                                class="object-cover rounded-lg aspect-video " alt="" />
+                                                class="object-cover rounded-md aspect-video " alt="" />
                                         </div>
                                         <div class="mt-2">
                                             <time class="text-xs leading-tight md:text-sm text-black2">2 Mar 2023</time>
@@ -698,13 +945,13 @@
                         </div>
                         <div class="swiper-slide">
                             <article
-                                class="max-w-md mx-auto overflow-hidden bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl">
+                                class="max-w-md mx-auto overflow-hidden bg-white rounded-md drop-shadow-md hover:drop-shadow-xl">
                                 <div class="p-4">
                                     <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
                                         target="_blank">
                                         <div class="rounded-2xl">
                                             <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qLlNDTNJmmU6eKKJWzREKQ.png"
-                                                class="object-cover rounded-lg aspect-video " alt="" />
+                                                class="object-cover rounded-md aspect-video " alt="" />
                                         </div>
                                         <div class="mt-2">
                                             <time class="text-xs leading-tight md:text-sm text-black2">2 Mar 2023</time>
@@ -733,13 +980,13 @@
                         </div>
                         <div class="swiper-slide">
                             <article
-                                class="max-w-md mx-auto overflow-hidden bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl">
+                                class="max-w-md mx-auto overflow-hidden bg-white rounded-md drop-shadow-md hover:drop-shadow-xl">
                                 <div class="p-4">
                                     <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
                                         target="_blank">
                                         <div class="rounded-2xl">
                                             <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qLlNDTNJmmU6eKKJWzREKQ.png"
-                                                class="object-cover rounded-lg aspect-video " alt="" />
+                                                class="object-cover rounded-md aspect-video " alt="" />
                                         </div>
                                         <div class="mt-2">
                                             <time class="text-xs leading-tight md:text-sm text-black2">2 Mar 2023</time>
@@ -768,13 +1015,13 @@
                         </div>
                         <div class="swiper-slide">
                             <article
-                                class="max-w-md mx-auto overflow-hidden bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl">
+                                class="max-w-md mx-auto overflow-hidden bg-white rounded-md drop-shadow-md hover:drop-shadow-xl">
                                 <div class="p-4">
                                     <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
                                         target="_blank">
                                         <div class="rounded-2xl">
                                             <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qLlNDTNJmmU6eKKJWzREKQ.png"
-                                                class="object-cover rounded-lg aspect-video " alt="" />
+                                                class="object-cover rounded-md aspect-video " alt="" />
                                         </div>
                                         <div class="mt-2">
                                             <time class="text-xs leading-tight md:text-sm text-black2">2 Mar 2023</time>
