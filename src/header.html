@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+    <!-- 
     <header data-aos="fade-down" data-aos-duration="600" data-aos-delay="300" x-data="{ navbarOpen: false }
     " class="absolute inset-x-0 top-0 z-50 flex items-center w-full ">
         <div class="container mx-auto">
@@ -28,70 +28,75 @@
                     <div>
 
                         <!-- Tombol hitam -->
-                        <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive' "
-                            id="navbarToggler"
-                            class=" absolute right-4 top-1/2 block -translate-y-1/2 rounded-md px-3 py-[6px]  lg:hidden">
-                            <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
-                            <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
-                            <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
-                        </button>
+    <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive' " id="navbarToggler"
+        class=" absolute right-4 top-1/2 block -translate-y-1/2 rounded-md px-3 py-[6px]  lg:hidden">
+        <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
+        <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
+        <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
+    </button>
 
-                        <!-- Navlist -->
-                        <nav :class="!navbarOpen && 'hidden' " id="navbarCollapse"
-                            class="absolute right-4 top-full w-full max-w-[250px] rounded-md bg-white/90 md:bg-transparent py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none justify-between items-center">
+    <!-- Navlist -->
+    <nav :class="!navbarOpen && 'hidden' " id="navbarCollapse"
+        class="absolute right-4 top-full w-full max-w-[250px] rounded-md bg-white/90 md:bg-transparent py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none justify-between items-center">
 
 
-                            <div class="w-full lg:flex lg:justify-between lg:items-center gap-36 ">
-                                <ul class="items-center lg:flex sm:mb-6 md:mb-0">
-                                    <li>
-                                        <a href="#home"
-                                            class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
-                                            Home
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#about"
-                                            class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
-                                            About
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#portfolio"
-                                            class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
-                                            Portfolio
-                                        </a>
-                                    </li>
+        <div class="w-full lg:flex lg:justify-between lg:items-center gap-36 ">
+            <ul class="items-center lg:flex sm:mb-6 md:mb-0">
+                <li>
+                    <a href="#home"
+                        class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#about"
+                        class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio"
+                        class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                        Portfolio
+                    </a>
+                </li>
 
-                                    <li>
-                                        <a href="#blog"
-                                            class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
-                                            Blog
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#contact"
-                                            class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
-                                            Contact
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="mt-4 sm:py-6 md:py-0 bg-blend-saturation md:ml-0 ">
+                <li>
+                    <a href="#blog"
+                        class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact"
+                        class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            <div class="mt-4 sm:py-6 md:py-0 bg-blend-saturation md:ml-0 ">
 
-                                    <a href="https://drive.google.com/file/d/1tYojJ_0mlaeImvE9kCQ-LFb8F-tCplsa/view?usp=sharing"
-                                        target="_blank"
-                                        class="px-8 py-3 text-sm font-medium text-white rounded-md lg:px-4 bg-primary hover:bg-opacity-90">
-                                        Download my CV
-                                    </a>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-
-                </div>
+                <a href="https://drive.google.com/file/d/1tYojJ_0mlaeImvE9kCQ-LFb8F-tCplsa/view?usp=sharing"
+                    target="_blank"
+                    class="px-8 py-3 text-sm font-medium text-white rounded-md lg:px-4 bg-primary hover:bg-opacity-90">
+                    Download my CV
+                </a>
             </div>
         </div>
-    </header>
+    </nav>
+    </div>
 
+    </div>
+    </div>
+    </div>
+    </header> -->
+
+
+    <div class="mx-auto mt-6 max-w-7xl">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quam, minus corporis delectus, soluta cum
+            tempore expedita mollitia similique reiciendis dolor nemo? Tempora dolore soluta omnis deserunt atque
+            voluptatibus nisi!</p>
+    </div>
 
 </body>
 

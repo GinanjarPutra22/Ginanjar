@@ -15,7 +15,114 @@
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" /> -->
 </head>
 
-<body>
+<body class="bg-slate-500">
+
+    <div class="flex justify-between w-full mx-auto tes mt-7">
+        <div class="bg-red-400">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, quod asperiores neque facilis, nemo
+                corrupti quas quae, ut distinctio dolor aspernatur! Corrupti, ad labore. Nesciunt tenetur tempore
+                eligendi? Aperiam, fugiat?</p>
+        </div>
+        <div class="bg-indigo-100">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, quod asperiores neque facilis, nemo
+                corrupti quas quae, ut distinctio dolor aspernatur! Corrupti, ad labore. Nesciunt tenetur tempore
+                eligendi? Aperiam, fugiat?</p>
+        </div>
+        <div class="bg-yellow-200">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, quod asperiores neque facilis, nemo
+                corrupti quas quae, ut distinctio dolor aspernatur! Corrupti, ad labore. Nesciunt tenetur tempore
+                eligendi? Aperiam, fugiat?</p>
+        </div>
+
+    </div>
+    <header data-aos="fade-down" data-aos-duration="600" data-aos-delay="300" x-data="{ navbarOpen: false }
+    " class="absolute inset-x-0 z-50 flex items-center w-full top-11 ">
+        <div class="container mx-auto">
+            <div class="relative flex items-center justify-between -mx-4 bg-green-400">
+                <div class="max-w-full px-4 w-60">
+                    <a href="#" class="block w-full py-5 text-2xl font-semibold pe-6 text-black1 ">
+                        GinanjarPutra
+                    </a>
+                </div>
+                <div class="flex items-center justify-between ">
+                    <div>
+                        <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive' "
+                            id="navbarToggler"
+                            class=" absolute right-4 top-1/2 block -translate-y-1/2 rounded-md px-3 py-[6px]  lg:hidden">
+                            <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
+                            <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
+                            <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
+                        </button>
+                        <nav :class="!navbarOpen && 'hidden' " id="navbarCollapse"
+                            class="absolute right-4 top-full w-full max-w-[250px] rounded-md bg-white/90 md:bg-transparent py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none justify-between items-center">
+
+
+                            <div class="items-center lg:flex lg:justify-between lg:items-center gap-36 ">
+                                <ul class="items-center bg-yellow-300 lg:flex sm:mb-6 md:mb-0">
+                                    <li>
+                                        <a href="#home"
+                                            class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#about"
+                                            class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                            About
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#portfolio"
+                                            class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                            Portfolio
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#blog"
+                                            class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact"
+                                            class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="mt-2 md:mt-0 bg-blend-saturation md:ml-0 ">
+
+                                    <a href="https://drive.google.com/file/d/1bxNgquctkHAeKaNuYQWPJG7zJuF3sqtW/view?usp=sharing"
+                                        target="_blank"
+                                        class="px-8 py-3 text-sm font-medium text-white rounded-md lg:px-4 bg-primary hover:bg-opacity-90">
+                                        Download my CV
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <br><br><br><br>
+
+    <header class="absolute inset-x-0 z-50 items-center w-full bg-blue-400 ">
+        <div class="mx-auto bg-yellow-200 max-w-7xl">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab possimus ea quibusdam vero quod veniam aut
+            necessitatibus corporis tempore neque doloremque blanditiis fugit nesciunt iste natus culpa, tempora cumque
+            nam.
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut animi possimus ullam? Quos eos atque
+            ratione facere eligendi mollitia dignissimos consequatur, quisquam blanditiis minus odio, minima
+            necessitatibus neque fugiat?</p>
+
+    </header>
 
     <!-- ====== Portfolio Section Start -->
     <section x-data="
@@ -1365,64 +1472,293 @@
     </div>
 
 
+    <!-- Konten -->
+    <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="450" class="flex flex-wrap -mx-4 ">
 
-    <!-- ====== Footer Section Start -->
+        <!-- ========KONTEN======== -->
 
-    <footer class="relative z-10 drop-shadow-md  pt-20 pb-10 lg:pt-[120px] lg:pb-20">
-        <div class="container mx-auto">
-            <div class="lg:flex lg:justify-between">
-                <div class="mb-10 md:mb-0">
-                    <a href="#" class="mb-4 text-2xl font-bold">GinanjarPutra</a>
-                    <p class="text-base text-body-color "> Don't wait for the perfect moment; take the moment and make
-                        it
-                        perfect 🚀</p>
-                </div>
+        <!-- EDU -->
+        <div :class="showCards == 'all' || showCards == 'edu' ? 'block' : 'hidden' " class="w-full ">
+            <div class="mb-6 ">
 
-                <div class="">
-                    <div class="flex-col items-end justify-end gap-4">
-                        <h4 class="mb-2 text-lg font-semibold text-dark">Quick Link</h4>
-                        <ul class="flex gap-4">
-                            <li>
-                                <a href="#home"
-                                    class="inline-block mb-2 text-base leading-loose text-body-color hover:text-primary">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#about"
-                                    class="inline-block mb-2 text-base leading-loose text-body-color hover:text-primary">
-                                    About
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#portfolio"
-                                    class="inline-block mb-2 text-base leading-loose text-body-color hover:text-primary">
-                                    Portfolio
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#blog"
-                                    class="inline-block mb-2 text-base leading-loose text-body-color hover:text-primary">
-                                    Blog
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#contact"
-                                    class="inline-block mb-2 text-base leading-loose text-body-color hover:text-primary">
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>
+                <section class="dark:bg-gray-800 dark:text-gray-100">
+                    <div class="max-w-5xl py-4 ">
+                        <div class="grid gap-4 mx-4 sm:grid-cols-12">
+
+                            <div class="relative col-span-12 px-4 space-y-6 border-l-2 sm:col-span-10">
+                                <div
+                                    class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700 opacity-10">
+                                    <div class="content">
+                                        <div
+                                            class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                        </div>
+                                        <time class="text-base font-normal text-slate-500 text-opacity-90 tracki">Aug
+                                            2021 | Surabaya</time>
+
+                                        <p class="text-xl font-semibold tracki text-slate-700">
+                                            Surabaya
+                                            State University </p>
+
+
+                                        <p class="font-normal text-neutral-500">Information
+                                            Technology Education
+                                        </p>
+                                    </div>
+                                    <div class="content">
+                                        <div
+                                            class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                        </div>
+                                        <time class="text-base font-normal text-slate-500 text-opacity-90 tracki">Aug
+                                            2018 - Aug 2021 | Lamongan</time>
+
+                                        <h3 class="text-xl font-semibold tracki text-slate-700">
+                                            MAN 2
+                                            Lamongan </h3>
+
+                                        <p class="font-normal text-neutral-500">Science
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- EXP -->
+        <div :class="showCards == 'exp' || showCards == 'exp' ? 'block' : 'hidden' " class="w-full ">
+            <!-- Wrok Experience -->
+            <div class="mb-6 ">
+                <h5 class="font-bold">Work Experience</h5>
+                <section class="dark:bg-gray-800 dark:text-gray-100">
+                    <div class="max-w-5xl py-4 ">
+                        <div class="grid gap-4 mx-4 sm:grid-cols-12">
+
+                            <div class="relative col-span-12 px-4 space-y-6 border-l-2 sm:col-span-10">
+                                <div
+                                    class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700 opacity-10">
+                                    <div class="content">
+                                        <div
+                                            class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                        </div>
+                                        <time class="text-base font-normal text-slate-500 text-opacity-90 tracki">Feb
+                                            2023 - Jun 2023 | Tangerang, Banten</time>
+
+                                        <h3 class="text-xl font-semibold tracki text-slate-700">
+                                            Torche
+                                            Education </h3>
+
+
+                                        <p class="font-normal text-neutral-500">UI Designer
+                                            Internship
+                                        </p>
+                                    </div>
+                                    <div class="content">
+                                        <div
+                                            class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                        </div>
+                                        <time class="text-base font-normal text-slate-500 text-opacity-90 tracki">Jan
+                                            2020 - Jun 2022| Lamongan</time>
+
+                                        <h3 class="text-xl font-semibold tracki text-slate-700">
+                                            Holide Id
+                                        </h3>
+
+                                        <p class="font-normal text-neutral-500">Social Media
+                                            Designer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
 
+            <!-- Organzation Experience -->
+            <div class="mb-6 ">
+                <h5 class="font-bold">Organzation Experience</h5>
+                <section class="dark:bg-gray-800 dark:text-gray-100">
+                    <div class="max-w-5xl py-4 ">
+                        <div class="grid gap-4 mx-4 sm:grid-cols-12">
 
+                            <div class="relative col-span-12 px-4 space-y-6 border-l-2 sm:col-span-10">
+                                <div
+                                    class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700 opacity-10">
+                                    <div class="content">
+                                        <div
+                                            class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                        </div>
+                                        <time class="text-base font-normal text-slate-500 text-opacity-90 tracki">Sep
+                                            2023 - Present | Surabaya</time>
+
+                                        <h3 class="text-xl font-semibold tracki text-slate-700">
+                                            Google Developer Student Clubs UNESA </h3>
+
+
+                                        <p class="font-normal text-neutral-500">Core Team
+                                            Research and Development | UI/UX Design
+                                        </p>
+                                    </div>
+
+                                    <div class="content">
+                                        <div
+                                            class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                        </div>
+                                        <time class="text-base font-normal text-slate-500 text-opacity-90 tracki">Mar
+                                            2021 - Present | Surabaya</time>
+
+                                        <h3 class="text-xl font-semibold tracki text-slate-700">
+                                            Himpunan
+                                            Mahasiswa Jurusan Teknik Informatika UNESA </h3>
+
+
+                                        <p class="font-normal text-neutral-500">Event
+                                            Project Department
+                                            Staff
+                                        </p>
+                                    </div>
+
+                                    <!-- 2 -->
+                                    <div class="content">
+                                        <div
+                                            class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                        </div>
+                                        <time class="text-base font-normal text-slate-500 text-opacity-90 tracki"">Jan
+                                     2021 - Dec 2021 | Surabaya</time>
+
+                                 <h3 class=" text-xl font-semibold tracki text-slate-700">Bidikmisi
+                                            Student Forum</h3>
+
+                                            <p class="font-normal text-neutral-500">
+                                                Relations and
+                                                Partnership
+                                                Department Staff
+                                            </p>
+                                    </div>
+
+                                    <!-- 3 -->
+                                    <div class="content">
+                                        <div
+                                            class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                        </div>
+                                        <time class="text-base font-normal text-slate-500 text-opacity-90 tracki">Jan
+                                            2021 - Dec 2021 | Lamongan</time>
+
+                                        <h3 class="text-xl font-semibold tracki text-slate-700">
+                                            Career and
+                                            Colage MAN 2 Lamongan</h3>
+
+                                        <p class="font-normal text-neutral-500">Event
+                                            Coordinator
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <!-- ACV -->
+        <div :class="showCards == 'acv' || showCards == 'acv' ? 'block' : 'hidden' " class="w-full ">
+            <!-- Wrok Experience -->
+            <div class="mb-6 ">
+
+                <section class="dark:bg-gray-800 dark:text-gray-100">
+                    <div class="max-w-5xl py-4 ">
+                        <div class="grid gap-4 mx-4 sm:grid-cols-12">
+
+                            <div class="relative col-span-12 px-4 space-y-6 border-l-2 sm:col-span-10">
+                                <div
+                                    class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700 opacity-10">
+                                    <div class="content">
+                                        <div
+                                            class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                        </div>
+                                        <time class="text-base font-normal text-slate-500 text-opacity-90 tracki">2023
+                                        </time>
+
+                                        <h3 class="text-xl font-semibold tracki text-slate-700">
+                                            2nd Place
+                                            in SICOMP UI/UX Design Mobile Application
+                                            Competition</h3>
+
+
+                                        <p class="mt-2 text-slate-600">National University
+                                        </p>
+                                    </div>
+                                    <div class="content">
+                                        <div
+                                            class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                        </div>
+                                        <time
+                                            class="text-base font-normal text-slate-500 text-opacity-90 tracki">2023</time>
+
+                                        <h3 class="text-xl font-semibold tracki text-slate-700">
+                                            Favorite
+                                            Startup Competition Champion
+                                        </h3>
+
+                                        <p class="font-normal text-neutral-500">GENBI Unesa
+                                        </p>
+                                    </div>
+                                    <div class="content">
+                                        <div
+                                            class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                        </div>
+                                        <time
+                                            class="text-base font-normal text-slate-500 text-opacity-90 tracki">2021</time>
+
+                                        <h3 class="text-xl font-semibold tracki text-slate-700">
+                                            2nd Place
+                                            in LKTIN Cone
+                                        </h3>
+
+                                        <p class="font-normal text-neutral-500">UINMA Malang
+                                        </p>
+                                    </div>
+                                    <div class="content">
+                                        <div
+                                            class="absolute w-6 h-6 bg-blue-500 border-2 rounded-xl border-slate-700 -top -left-7 dot">
+
+                                        </div>
+                                        <time
+                                            class="text-base font-normal text-slate-500 text-opacity-90 tracki">2021</time>
+
+                                        <h3 class="text-xl font-semibold tracki text-slate-700">
+                                            Best
+                                            Presentation
+                                            in LKTIN Cone
+                                        </h3>
+
+                                        <p class="font-normal text-neutral-500">UINMA Malang
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
         </div>
 
-    </footer>
-
+    </div>
 
 
 
