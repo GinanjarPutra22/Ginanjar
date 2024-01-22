@@ -1470,10 +1470,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -2623,10 +2619,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(190 242 100 / var(--tw-bg-opacity));
-}
-
-.hover\:gap-6:hover {
-  gap: 1.5rem;
 }
 
 .hover\:border-primary:hover {
