@@ -13,6 +13,151 @@
 
 <body>
 
+    <!-- ====== Navbar Section Start -->
+    <div id="home" class="">
+
+        <header data-aos="fade-down" data-aos-duration="600" data-aos-delay="300" x-data="{ navbarOpen: false }
+        " class="absolute inset-x-0 top-0 z-50 flex items-center w-full ">
+            <div class="container mx-auto">
+                <div class="relative flex items-center justify-between -mx-4">
+                    <div class="max-w-full px-4 w-60">
+                        <a href="#" class="block w-full py-5 text-2xl font-semibold pe-6 text-black1 ">
+                            GinanjarPutra
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-between w-full px-4">
+                        <div>
+                            <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive' "
+                                id="navbarToggler"
+                                class=" absolute right-4 top-1/2 block -translate-y-1/2 rounded-md px-3 py-[6px]  lg:hidden">
+                                <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
+                                <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
+                                <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
+                            </button>
+                            <nav :class="!navbarOpen && 'hidden' " id="navbarCollapse"
+                                class="absolute right-4 top-full w-full max-w-[250px] rounded-md bg-white/90 md:bg-transparent py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none justify-between items-center">
+
+
+                                <div class="w-full lg:flex lg:justify-between lg:items-center gap-36 ">
+                                    <ul class="items-center lg:flex sm:mb-6 md:mb-0">
+                                        <li>
+                                            <a href="#home"
+                                                class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#about"
+                                                class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                                About
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#portfolio"
+                                                class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                                Portfolio
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#blog"
+                                                class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                                Blog
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact"
+                                                class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                                Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="mt-4 sm:py-6 md:py-0 bg-blend-saturation md:ml-0 ">
+
+                                        <a href="https://drive.google.com/file/d/1HYk8u2DqeujU6YPLzJXJFppedqlqYpJW/view?usp=sharing"
+                                            target="_blank"
+                                            class="px-8 py-3 text-sm font-medium text-white rounded-md lg:px-4 bg-primary hover:bg-opacity-90">
+                                            Download my CV
+                                        </a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="relative px-6 pt-2 isolate lg:px-8">
+        <div class="absolute inset-x-0 overflow-hidden -top-40 -z-10 transform-gpu blur-3xl sm:-top-80"
+            aria-hidden="true">
+            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#5500ffaf] to-[#0613ff53] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%,)">
+            </div>
+        </div>
+        <div class="max-w-2xl py-24 mx-auto lg:py-32">
+            <div class="py-4 mt-4 mb-9 sm:mb-12 sm:flex sm:justify-center">
+                <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="300"
+                    class="relative p-2 mx-auto text-sm leading-6 text-center rounded-md md:w-2/5 animate-bounce ring-1 ring-gray-900/10 hover:shadow-lg text-slate-500 hover:text-slate-700">
+                    <div class="flex flex-col items-center justify-center gap-2 md:py-5 md:flex-row md:block">
+                        <p> New Blog: Mengenal apa itu UI/UX Design</p>
+
+
+                        <a href="https://medium.com/@GinanjarPutra22/mengenal-apa-itu-ui-ux-design-a59e86658891"
+                            target="_blank" class="font-medium text-primary"><span class="absolute inset-0"
+                                aria-hidden="true"></span>Read
+                            more <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- TEXT -->
+            <div class="text-center">
+                <h1 data-aos="fade-up" data-aos-duration="600" data-aos-delay="300"
+                    class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Hello, I'm Ginanjar
+                    <span class="animate-pulse ">👋</span>
+                </h1>
+                <h1 data-aos="fade-up" data-aos-duration="600" data-aos-delay="500"
+                    class="text-2xl font-bold tracking-tight text-gray-800 sm:text-4xl">
+                    UI/UX Enthusiast & Currently studying web programming</h1>
+                <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="600"
+                    class="mt-6 text-lg leading-8 text-gray-600">
+                    A learner UI/UX Designer and creative Web Developer who creates engaging and functional
+                    digital experiences for users.
+                </p>
+                <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="600"
+                    class="flex items-center justify-center mt-2 mb-16 md:mt-4 gap-x-6 ">
+
+
+                    <a href="https://drive.google.com/file/d/1HYk8u2DqeujU6YPLzJXJFppedqlqYpJW/view?usp=sharing"
+                        target="_blank"
+                        class="px-6 py-2 text-sm font-semibold leading-6 text-black text-gray-900 transition-all border border-transparent rounded-md rounded-mdrounded-none hover:border-primary hover: hover:text-primary hover:border-spacing-3">Get
+                        my CV <span aria-hidden="true" class="text-lg">→</span></a>
+                </div>
+            </div>
+        </div>
+        <!-- blur-3xl -->
+
+        <div class="absolute inset-x-0 top-[calc(100%-13rem)] blur-3xl -z-10 transform-gpu overflow-hidden  sm:top-[calc(100%-30rem)]"
+            aria-hidden="true">
+            <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#03aaec] to-[#2bbfff13] sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                style="clip-path: polygon(74.4% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%,  17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%, )">
+            </div>
+        </div>
+
+        <div class="absolute inset-x-0 top-[calc(100%-13rem)] blur-3xl -z-10 transform-gpu overflow-hidden  sm:top-[calc(100%-30rem)]"
+            aria-hidden="true">
+            <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- ====== Navbar Section End -->
+
+
 
     <button
         class="middle none rounded-lg bg-gray-900 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"

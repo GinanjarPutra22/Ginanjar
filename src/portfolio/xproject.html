@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ginanjar</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- logo title -->
+    <link rel="icon" href="../../public/asstes/logo/logo (1).png">
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- ====== Navbar Section Start -->
+    <div id="home" class="sticky top-0">
+
+        <header data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600" x-data="{ navbarOpen: false }
+        " class="absolute inset-x-0 top-0 z-50 flex items-center w-full ">
+            <div class="container mx-auto">
+                <div class="relative flex items-center justify-between -mx-4">
+                    <div class="max-w-full px-4 w-60">
+                        <a href="#" class="block w-full py-5 text-2xl font-semibold pe-6 text-black1 ">
+                            GinanjarPutra
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-between w-full px-4">
+                        <div>
+                            <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive' "
+                                id="navbarToggler"
+                                class=" absolute right-4 top-1/2 block -translate-y-1/2 rounded-md px-3 py-[6px]  lg:hidden">
+                                <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
+                                <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
+                                <span class="bg-black relative my-[6px] block h-[2px] w-[30px]"></span>
+                            </button>
+                            <nav :class="!navbarOpen && 'hidden' " id="navbarCollapse"
+                                class="absolute right-4 top-full w-full max-w-[250px] rounded-md bg-white/90 md:bg-transparent py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none justify-between items-center">
+
+
+                                <div class="w-full lg:flex lg:justify-between lg:items-center gap-36 ">
+                                    <ul class="items-center lg:flex sm:mb-6 md:mb-0">
+                                        <li>
+                                            <a href="../../index.html#home"
+                                                class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../../index.html#about"
+                                                class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                                About
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../../index.html#portfolio"
+                                                class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                                Portfolio
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="../../index.html#blog"
+                                                class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                                Blog
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../../index.html#contact"
+                                                class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                                Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="mt-4 sm:py-6 md:py-0 bg-blend-saturation md:ml-0 ">
+
+                                        <a href="https://drive.google.com/file/d/1tYojJ_0mlaeImvE9kCQ-LFb8F-tCplsa/view?usp=sharing"
+                                            target="_blank"
+                                            class="px-8 py-3 text-sm font-medium text-white rounded-md lg:px-4 bg-primary hover:bg-opacity-90">
+                                            Download my CV
+                                        </a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+
+    <div class="container mx-auto">
+
+    </div>
+
+    <!-- ====== Navbar Section End -->
+
+
+    <div class="container max-w-screen-lg py-24 mx-auto ">
+        <!-- breadcumb -->
+        <a href="../../index.html#portfolio" class="flex mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1);">
+                <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+            </svg> Kembali
+            <i class='bx bx-chevron-left'></i>
+        </a>
+
+
+
+        <!-- Thumbnail -->
+        <div class="relative w-full my-4 rounded-md -z-10 md:mb-8" style="height: 26em;">
+            <img src="../../public/asstes/images/portfolio/X-Project9.0.png" alt="Zoomable Image"
+                class="absolute top-0 left-0 z-0 object-cover w-full h-full rounded-md zoom" />
+        </div>
+
+        <!-- JUDUL -->
+        <p class="mb-4 text-4xl font-semibold text-black "> Official Website of X-Project 9.0 HIMTI UNESA
+        </p>
+        <hr class="mt-6 mb-10">
+
+
+        <!-- OVERVIEW -->
+        <p class="my-4 mt-4 text-2xl font-bold text-black">Overview Project</p>
+        <div class="flex flex-col justify-between md:grid md:grid-cols-3 lg:grid-cols-3 md:gap-y-4 md:gap-x-4 gap-y-4">
+            <div class="flex flex-col ">
+
+                <div class="font-semibold">Timeline</div>
+                <div>Mar - Apr 2023</div>
+            </div>
+
+
+            <div class="flex flex-col ">
+                <div class="font-semibold">Role</div>
+                <div>UI/UX Designer</div>
+            </div>
+            <div class="flex flex-col">
+                <div class="font-semibold">Tools</div>
+                <div>Figma</div>
+            </div>
+
+            <!-- <div class="flex flex-col">
+                <p class="font-semibold">Tach Stack</p>
+                <p>Bootstrap 5, Javascript, PHP, MySql</p>
+            </div> -->
+            <div class="flex flex-col ">
+                <div class="font-semibold">View Website Deployment</div>
+
+                <a href="https://xproject9.netlify.app/" target="_blank"
+                    class="self-stretch text-base font-normal leading-normal text-black transition-all hover:font-medium hover:text-primary">
+                    View Website <i class="rotate-45">→</i>
+                </a>
+
+
+
+
+            </div>
+        </div>
+
+
+        <!-- TEXT -->
+        <div class="mt-12 text-lg leading-relaxed text-body-color">
+            <p class="my-4 text-2xl font-bold text-black">Tentang Project</p>
+            <p class="pb-6">X-Project merupakan acara tahunan yang diadakan oleh himti UNESA. X-Project 9.0 memiliki
+                serangkaian acara yang meliputi kegiatan pelatihan, pembelajaran pada bidang keahlian tertentu,
+                perlombaan, IT expo, kewirausahaan dan pertunjukan yang bertujuan untuk mengenalkan HIMTI UNESA. Pada
+                projek ini saya
+                Sebagai seorang UI/UX Designer yang berpartisipasi dalam penyelenggaraan X-Project 9.0 oleh HIMTI UNESA,
+                saya memiliki tanggung jawab untuk menciptakan pengalaman pengguna yang menarik dan intuitif melalui
+                desain website kegiatan ini. Dengan fokus pada aspek visual dan fungsional, saya berupaya untuk
+                menghadirkan antarmuka yang memudahkan pengguna dalam mengakses informasi seputar kegiatan pelatihan,
+                pembelajaran tentang IT, perlombaan IT, dan pertunjukan yang diselenggarakan dalam rangkaian
+                kegiatan tersebut.
+
+            </p>
+
+            <p class="my-4 text-2xl font-bold text-black">Peran dan Tanggung Jawab</p>
+            <p class="mt-2 font-semibold text-black">UI/UX Designer</p>
+            <ol>
+                <!-- List Items (li) -->
+                <li>1. Analisis kebutuhan pengguna dan penelitian pasar.</li>
+                <li>2. Pengembangan persona pengguna untuk memahami audiens target.</li>
+                <li>3. Penyusunan sketsa (sketches) dan wireframe awal.</li>
+                <li>4. Perancangan low-fi dan Hi-fi</li>
+                <li>5. Membuat component UI</li>
+                <li>Optimalisasi responsif untuk berbagai perangkat dan ukuran layar.</li>
+                <li>6. Pengembangan prototipe interaktif untuk pengujian pengguna.</li>
+
+
+
+            </ol>
+
+
+
+            <!-- PROSES PENGEMBANGAN -->
+
+            <!-- <p class="mt-6 mb-4 text-2xl font-bold text-black">Proses Pengembangan</p>
+
+            <div class="mb-4">Pada tahap pengembangan ini menggunakan metode agile scrum. Metode Agile Scrum adalah
+                kerangka kerja pengembangan perangkat lunak yang berada di dalam kelompok metode Agile. Metode ini
+                didesain untuk meningkatkan fleksibilitas dan respon terhadap perubahan kebutuhan pelanggan dalam
+                pengembangan perangkat lunak. </div> -->
+            <div class="max-w-md mx-auto">
+                <!-- Tambahkan class 'zoom' untuk menandai gambar yang dapat di-zoom -->
+                <!-- <img src="../../public/asstes/images/Agile-Methodology.png" alt="Zoomable Image" class="w-full zoom"> -->
+            </div>
+
+
+
+
+
+
+
+
+            <p class="mt-6 mb-4 text-2xl font-bold text-black">Apa yang saya pelajari?</p>
+            <div class="mb-4">
+                <p class="mb-2">Pada projek ini saya mendapatkan beberapa pelajaran yang bisa saya pahami yatu:</p>
+
+                <div class="flex flex-col mb-2 ">
+                    <p class="font-semibold text-black ">Manajemen waktu dengan tepat</p>
+                    <p>Pada projek ini saya harus menyelesaikan dengan tepat waktu agar kegiatan sesuai dengan Timeline,
+                        karena website X-Project 9.0 haru selesai sebelum event akan dimulai</p>
+                </div>
+
+                <div class="flex flex-col mb-2 ">
+                    <p class="font-semibold text-black ">Penyesuaian dengan tema yang sudah ada</p>
+                    <p>Website X-Project ini dibuat dengan tema yang sudah ada yaitu bawah laut (Underwater) sesuai
+                        dengan feeds instagram, jadi saya harus bisa menyesuaikan website ini dengan tema yang sudah ada
+                    </p>
+                </div>
+
+                <div class="flex flex-col mb-2 ">
+                    <p class="font-semibold text-black ">UX Writing harus jelas dan tidak membingungkan</p>
+                    <p>saat melakukan pengujian untuk pengguna, ada beberapa pengguna tidak memahami penulisan pada
+                        website dan tidak menemukan informasi yang dicari oleh mereka
+
+                    </p>
+                </div>
+
+                <div class="flex flex-col mb-2 ">
+                    <p class="font-semibold text-black ">Memahami target pasar dan calon pengguna</p>
+                    <p>Target pasar untuk X-Project melibatkan mahasiswa dan profesional di bidang teknologi informasi,
+                        khususnya yang tertarik pada pembelajaran IT dan Event Perlombaan pada bidang IT</p>
+                </div>
+
+
+            </div>
+
+            <div class="mb-4">
+                Melalui proyek Digiskill, saya mengalami kemajuan signifikan dalam mengelola tugas dan waktu. Terlibat
+                sebagai seorang yang fokus pada manajemen, saya berhasil merancang strategi manajemen tugas efektif,
+                memprioritaskan pekerjaan dengan cerdas, dan mengoptimalkan penggunaan waktu saya. Pengalaman ini tidak
+                hanya memperkuat keterampilan organisasi, tetapi juga membuka wawasan dalam berkomunikasi secara efektif
+                dengan tim dan pemangku kepentingan. Keseluruhan, proyek ini memberikan fondasi kokoh untuk pertumbuhan
+                pribadi dan profesional saya di bidang manajemen.
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- ===== Contact Section Start ===== -->
+    <section id="contact" class="relative max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 lg:pt-6 drop-shadow-lg">
+
+        <div class="absolute inset-0 overflow-hidden -z-10">
+            <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-slate-400/30 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+                aria-hidden="true">
+                <defs>
+                    <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1"
+                        patternUnits="userSpaceOnUse">
+                        <path d="M100 200V.5M.5 .5H200" fill="none" />
+                    </pattern>
+                </defs>
+                <svg x="50%" y="-1" class="overflow-visible fill-slate-400/10">
+                    <path
+                        d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                        stroke-width="0" />
+                </svg>
+                <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+            </svg>
+        </div>
+
+        <div class="flex flex-wrap -mx-4 ">
+            <div data-aos="fade-up"" class=" w-full px-4 ">
+            <div class=" mx-auto mb-[60px] max-w-[510px] text-center">
+                <span data-aos="fade-up" data-aos-duration="600" data-aos-delay="150"
+                    class="block mb-2 text-lg font-semibold text-primary">
+                    Contact
+                </span>
+                <h2 data-aos="fade-up" data-aos-duration="600" data-aos-delay="150"
+                    class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
+                    Let's get Connect
+                </h2>
+                <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" class="text-base text-body-color">
+                    Thank you for taking the time to visit my personal website. I hope we can connect more.
+                </p>
+            </div>
+        </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto my-9">
+
+            <div class="flex flex-wrap justify-center -m-4">
+
+
+                <!-- Email -->
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="200"
+                    class="w-auto p-1.5 animate-bounce  ">
+                    <a class="flex items-center  px-4 py-2.5 bg-white  hover:shadow-lg border border-solid border-gray1-500 gap-2  rounded-full transition duration-200 :"
+                        href="mailto:mohginanjar22@gmail.com" title="mohginanjar22@gmail.com" target="_blank">
+                        <div class="inline-block p-1 bg-red-600 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" " style="
+                                fill: rgb(255, 251, 251);">
+                                <path
+                                    d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight text-black1 ">Email</span>
+                    </a>
+                </div>
+
+                <!-- Linkedin -->
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="400"
+                    class="w-auto p-1.5   animate-bounce ">
+
+                    <a class="flex items-center px-6 py-2.5 bg-white hover:shadow-lg border border-gray-300 rounded-full transition duration-200"
+                        href="https://www.linkedin.com/in/ginanjarputra22/" title="@ginanjarputra22">
+
+                        <div class="inline-block">
+                            <svg class="mr-1.5" width="22" height="22" viewbox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9995 0.439941C5.16725 0.439941 0.439453 5.16774 0.439453 10.9999C0.439453 16.8321 5.16725 21.5599 10.9995 21.5599C16.8317 21.5599 21.5595 16.8321 21.5595 10.9999C21.5595 5.16774 16.8317 0.439941 10.9995 0.439941ZM8.41445 15.3768H6.27605V8.49524H8.41445V15.3768ZM7.33205 7.65044C6.65665 7.65044 6.21995 7.17194 6.21995 6.58014C6.21995 5.97624 6.66985 5.51204 7.35955 5.51204C8.04925 5.51204 8.47165 5.97624 8.48485 6.58014C8.48485 7.17194 8.04925 7.65044 7.33205 7.65044ZM16.2245 15.3768H14.0861V11.5631C14.0861 10.6754 13.7759 10.0726 13.0026 10.0726C12.4119 10.0726 12.061 10.4807 11.9059 10.8734C11.8487 11.0131 11.8344 11.2111 11.8344 11.408V15.3757H9.69485V10.6897C9.69485 9.83064 9.66735 9.11234 9.63875 8.49414H11.4967L11.5946 9.45004H11.6375C11.9191 9.00124 12.6088 8.33904 13.7627 8.33904C15.1696 8.33904 16.2245 9.28174 16.2245 11.3079V15.3768Z"
+                                    fill="#0A66C2"></path>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight text-black1 ">LinkedIn</span>
+                    </a>
+                </div>
+
+                <!-- INSTA -->
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="600"
+                    class="w-auto p-1.5  animate-bounce   ">
+                    <a class="flex items-center px-4 py-2.5 bg-white  hover:shadow-lg border gap-2 border-gray-300 rounded-full transition duration-200 group:"
+                        href="https://www.instagram.com/ginanjar_putra22/" target="_blank" title="@ginanjar_putra22">
+                        <div class="inline-block p-1 bg-red-600 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                style="fill: rgb(255, 255, 255);">
+                                <path
+                                    d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z">
+                                </path>
+                                <circle cx="11.994" cy="11.979" r="3.003"></circle>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight text-black1 group-hover:text-white">Instagram</span>
+                    </a>
+                </div>
+
+                <!-- Github -->
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="800"
+                    class="w-auto p-1.5  animate-bounce ">
+                    <a class="flex items-center px-6 py-2.5 bg-white  border border-gray-300 rounded-full transition duration-200 hover:shadow-lg"
+                        href="https://github.com/GinanjarPutra22" target="_blank" title="GinanjarPutra22">
+                        <div class="inline-block">
+                            <svg class="mr-1.5" width="22" height="22" viewbox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11 1.83333C5.93739 1.83333 1.83333 5.93739 1.83333 11C1.83333 16.0626 5.93739 20.1667 11 20.1667C16.0626 20.1667 20.1667 16.0626 20.1667 11C20.1667 5.93739 16.0626 1.83333 11 1.83333ZM0 11C0 4.92488 4.92488 0 11 0C17.0751 0 22 4.92488 22 11C22 17.0751 17.0751 22 11 22C4.92488 22 0 17.0751 0 11Z"
+                                    fill="black"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.7921 20.8414C8.70341 20.7269 8.70341 19.7073 8.7921 17.7826C7.84248 17.8155 7.24252 17.7495 6.99223 17.585C6.61671 17.3381 6.24083 16.5766 5.90726 16.04C5.57373 15.5034 4.83348 15.4186 4.53453 15.2986C4.23559 15.1786 4.16055 14.6896 5.35827 15.0595C6.55594 15.4293 6.61438 16.4364 6.99223 16.6719C7.37003 16.9074 8.27336 16.8043 8.68279 16.6157C9.09226 16.427 9.0621 15.7246 9.13512 15.4464C9.22743 15.1866 8.9021 15.129 8.89495 15.1269C8.49519 15.1269 6.39529 14.6702 5.81853 12.6367C5.24171 10.6033 5.98472 9.27418 6.38108 8.70283C6.64536 8.3219 6.62198 7.5101 6.31096 6.26733C7.44011 6.12305 8.31149 6.47844 8.92506 7.3336C8.92566 7.3385 9.72948 6.8556 10.9999 6.8556C12.2703 6.8556 12.7209 7.24895 13.0688 7.3336C13.4166 7.41825 13.6948 5.83668 15.8429 6.26733C15.3944 7.1488 15.0188 8.25027 15.3055 8.70283C15.5922 9.15538 16.7172 10.5945 16.0261 12.6367C15.5654 13.9983 14.6597 14.8284 13.309 15.1269C13.1542 15.1763 13.0767 15.2561 13.0767 15.3661C13.0767 15.5311 13.2861 15.5491 13.5877 16.3222C13.7889 16.8376 13.8034 18.3097 13.6313 20.7384C13.1954 20.8494 12.8564 20.9239 12.6141 20.962C12.1844 21.0295 11.7179 21.0673 11.2596 21.0819C10.8013 21.0966 10.6421 21.0949 10.0084 21.0359C9.58598 20.9966 9.18054 20.9318 8.7921 20.8414Z"
+                                    fill="black"></path>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight">Github</span>
+                    </a>
+                </div>
+
+                <!-- Medium -->
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="1000"
+                    class="w-auto p-1.5  animate-bounce ">
+                    <a class="flex items-center px-6 py-2.5 bg-white hover:shadow-lg border border-gray-300 rounded-full transition duration-200"
+                        href="https://medium.com/@GinanjarPutra22" target="_blank" title="@GinanjarPutra22">
+                        <div class="inline-block">
+                            <svg class="mr-1.5" width="20" height="20" viewbox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 0.375C4.68477 0.375 0.375 4.68477 0.375 10C0.375 15.3152 4.68477 19.625 10 19.625C15.3152 19.625 19.625 15.3152 19.625 10C19.625 4.68477 15.3152 0.375 10 0.375ZM15.5 5.82559L14.6234 6.66562C14.5461 6.72363 14.5096 6.81816 14.5246 6.91055V13.0916C14.5096 13.1861 14.5461 13.2807 14.6234 13.3365L15.4828 14.1766V14.3635H11.1688V14.1852L12.0561 13.3236C12.1441 13.2355 12.1441 13.2098 12.1441 13.0787V8.07715L9.67344 14.342H9.34043L6.46582 8.07715V12.2773C6.44004 12.4535 6.50234 12.6318 6.62695 12.7586L7.78281 14.1572V14.3441H4.5V14.1572L5.65586 12.7586C5.71676 12.6957 5.76208 12.6194 5.7882 12.5358C5.81431 12.4523 5.82049 12.3637 5.80625 12.2773V7.42188C5.82129 7.28652 5.76973 7.15547 5.6666 7.06309L4.63965 5.82559V5.63867H7.83008L10.2922 11.042L12.46 5.64297H15.5V5.82559Z"
+                                    fill="#464646"></path>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight">Medium</span>
+                    </a>
+                </div>
+
+                <!-- Dribble -->
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="1200"
+                    class="w-auto p-1.5  animate-bounce ">
+                    <a class="flex items-center px-6 py-2.5 bg-white hover:shadow-lg border border-gray-300 rounded-full transition duration-200"
+                        href="https://dribbble.com/Ginanjar_Putra" target="_blank" title="Ginanjar_Putra">
+                        <div class="inline-block">
+                            <svg class="mr-1.5" width="20" height="20" viewbox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.5041 6.05332C12.8679 5.4873 12.1041 5.08393 11.2779 4.87776C10.4517 4.67159 9.58786 4.66877 8.76035 4.86953C8.90645 5.06504 9.8668 6.37129 10.7326 7.96328C12.6125 7.25859 13.4074 6.18867 13.5041 6.05332ZM10.9023 10.8766C7.92246 11.9143 6.85039 13.9832 6.75586 14.1766C7.65176 14.8748 8.77754 15.2916 10 15.2916C10.7326 15.2916 11.4309 15.1434 12.0646 14.8727C11.9852 14.4086 11.6801 12.793 10.9367 10.8637L10.9023 10.8766ZM11.9271 10.6209C12.6189 12.5201 12.9004 14.067 12.9541 14.3893C14.14 13.5879 14.9844 12.3182 15.2186 10.8465C15.0381 10.7906 13.5836 10.3566 11.9271 10.6209ZM10 0.375C4.68477 0.375 0.375 4.68477 0.375 10C0.375 15.3152 4.68477 19.625 10 19.625C15.3152 19.625 19.625 15.3152 19.625 10C19.625 4.68477 15.3152 0.375 10 0.375ZM10 16.1875C6.58828 16.1875 3.8125 13.4117 3.8125 10C3.8125 6.58828 6.58828 3.8125 10 3.8125C13.4117 3.8125 16.1875 6.58828 16.1875 10C16.1875 13.4117 13.4117 16.1875 10 16.1875ZM11.1408 8.74961C11.2633 9.00098 11.3814 9.25664 11.491 9.51445C11.5297 9.60469 11.5684 9.69492 11.6049 9.7873C13.3623 9.56602 15.1111 9.92051 15.2852 9.95703C15.2744 8.70879 14.8275 7.56367 14.0928 6.66348C13.9789 6.81602 13.0937 7.95254 11.1408 8.74961ZM9.71211 8.28125C8.83555 6.72363 7.89238 5.41523 7.75273 5.22402C6.27461 5.92227 5.16816 7.28437 4.82656 8.92363C5.06289 8.92793 7.24141 8.93867 9.71211 8.28125ZM10.3695 10.0537C10.4383 10.0322 10.507 10.0107 10.5779 9.99141C10.4447 9.69063 10.3008 9.38984 10.1504 9.09551C7.51211 9.88613 4.94902 9.85176 4.71914 9.84746C4.71699 9.90117 4.71699 9.95488 4.71699 10.0086C4.71699 11.3664 5.23047 12.6061 6.0748 13.5428C6.19297 13.3365 7.64316 10.9346 10.3695 10.0537Z"
+                                    fill="#D75285"></path>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight">Dribble</span>
+                    </a>
+                </div>
+
+                <!-- behance -->
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="1400"
+                    class="w-auto p-1.5  animate-bounce ">
+                    <a class="flex items-center px-5 py-2 transition duration-200 bg-white border border-gray-300 rounded-full hover:shadow-lg"
+                        href="https://www.behance.net/ginanjar_putra22" target="_blank" title="ginanjar_putra22">
+                        <div class="inline-block">
+
+                            <svg height="30px" width="30px" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="-92.16 -92.16 696.32 696.32" xml:space="preserve" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#CCCCCC" stroke-width="2.048"></g>
+                                <g id="SVGRepo_iconCarrier" height="200px" width="200px">
+                                    <circle style="fill:#3A67FA;" cx="256" cy="256" r="256"></circle>
+                                    <path style="fill:#2451D1;"
+                                        d="M497.228,341.857L381.093,225.723l-88.316,13.576l-68.389-61.264l-93.658,13.033l-19.725,151.09 l159.634,169.419C375.51,505.661,463.494,436.629,497.228,341.857z">
+                                    </path>
+                                    <path style="fill:#FFFFFF;"
+                                        d="M233.496,241.567c5.072-7.897,7.97-17.315,7.801-27.415c-0.446-27.026-22.938-48.5-49.967-48.5 h-75.462c-3.534,0-6.399,2.865-6.399,6.399v165.952c0,3.534,2.865,6.399,6.399,6.399h84.296c31.285,0,57.203-25.078,57.327-56.363 C257.572,268.866,248.06,251.868,233.496,241.567L233.496,241.567z M142.574,198.758h49.402c8.945,0,16.225,7.278,16.225,16.225 c0,8.945-7.28,16.224-16.225,16.224h-49.402V198.758z M200.897,311.296h-58.323v-46.983h58.323 c12.953,0,23.492,10.542,23.492,23.492C224.387,300.758,213.851,311.296,200.897,311.296L200.897,311.296z">
+                                    </path>
+                                    <g>
+                                        <path style="fill:#D1D1D1;"
+                                            d="M402.532,276.27c0-38.64-30.455-70.079-67.891-70.079c-37.438,0-67.893,31.439-67.893,70.079 c0,38.643,30.458,70.078,67.893,70.078c22.714,0,43.822-11.643,56.463-31.148c1.574-2.434,3.007-4.975,4.277-7.594 c0.921-1.901-0.478-4.115-2.591-4.117l-33.373-0.084c-0.736,0-1.439,0.3-1.967,0.815c-6.303,6.127-14.027,9.025-22.807,9.025 c-16.587,0-30.489-12.405-33.951-28.941h95.199c3.668,0,6.642-2.975,6.642-6.646v-1.389H402.532z M334.641,239.297 c12.145,0,22.852,6.659,29.075,16.715h-58.154C311.787,245.957,322.493,239.297,334.641,239.297L334.641,239.297z">
+                                        </path>
+                                        <path style="fill:#D1D1D1;"
+                                            d="M362.853,197.968h-60.218c-2.808,0-5.087-2.279-5.087-5.087v-15.105 c0-2.808,2.279-5.087,5.087-5.087h60.218c2.808,0,5.084,2.279,5.084,5.087v15.105C367.938,195.693,365.661,197.968,362.853,197.968 L362.853,197.968z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight">Behance</span>
+                    </a>
+                </div>
+
+
+                <!-- YT -->
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="1600"
+                    class="w-auto p-1.5  animate-bounce ">
+                    <a class="flex items-center px-5 py-2 transition duration-200 bg-white border border-gray-300 rounded-full hover:shadow-lg"
+                        href="https://www.youtube.com/channel/UCbQXqQ_LcRAspiYZDb3h5_w" target="_blank"
+                        title="Ginanjar Putra">
+                        <div class="flex flex-row gap-x-4">
+
+                            <svg class="me-3" width="22" height="22" viewbox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.7628 10.8162L10.2922 9.66344C10.0766 9.56334 9.89945 9.67554 9.89945 9.91424V12.0856C9.89945 12.3243 10.0766 12.4365 10.2922 12.3364L12.7617 11.1836C12.9784 11.0824 12.9784 10.9174 12.7628 10.8162ZM10.9995 0.439941C5.16725 0.439941 0.439453 5.16774 0.439453 10.9999C0.439453 16.8321 5.16725 21.5599 10.9995 21.5599C16.8317 21.5599 21.5595 16.8321 21.5595 10.9999C21.5595 5.16774 16.8317 0.439941 10.9995 0.439941ZM10.9995 15.2899C5.59405 15.2899 5.49945 14.8026 5.49945 10.9999C5.49945 7.19724 5.59405 6.70994 10.9995 6.70994C16.4049 6.70994 16.4995 7.19724 16.4995 10.9999C16.4995 14.8026 16.4049 15.2899 10.9995 15.2899Z"
+                                    fill="#F60D19"></path>
+                            </svg>
+                        </div>
+                        <span class="font-bold tracking-tight ms-4">Youtube</span>
+                    </a>
+                </div>
+
+                <!-- TikTok -->
+                <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="1800"
+                    class="w-auto p-1.5  animate-bounce ">
+                    <a class="flex items-center px-6 py-2.5 bg-white hover:bg-gray-100 border border-gray-300 rounded-full transition duration-200"
+                        href="https://www.tiktok.com/@ginan22_" target="_blank">
+                        <div class="inline-block">
+
+                            <svg width="22" height="22" viewBox="0 0 52 52" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="52" height="52" rx="26" fill="black" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22.8722 22.6V21.3519C22.439 21.2905 22.0022 21.2587 21.5647 21.2566C16.2145 21.2566 11.8618 25.6101 11.8618 30.9603C11.8618 34.2422 13.5021 37.1474 16.0042 38.9042C14.3288 37.1125 13.3974 34.7508 13.3987 32.2978C13.3987 27.0238 17.6276 22.7231 22.8722 22.6"
+                                    fill="#00F2EA" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M23.101 36.729C25.488 36.729 27.4354 34.8301 27.524 32.4635L27.5321 11.3375H31.3916C31.3092 10.8965 31.2675 10.4487 31.267 10H25.996L25.9872 31.1267C25.8992 33.4925 23.9512 35.3907 21.5648 35.3907C20.8484 35.391 20.1427 35.2165 19.509 34.8821C19.9182 35.4529 20.4574 35.9182 21.082 36.2393C21.7066 36.5605 22.3986 36.7283 23.101 36.729V36.729ZM38.6015 18.5083V17.3341C37.1831 17.3355 35.7951 16.9229 34.6079 16.1469C35.6488 17.3454 37.0503 18.1739 38.6022 18.5083"
+                                    fill="#00F2EA" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34.6071 16.146C33.4435 14.8146 32.8027 13.1063 32.8034 11.3381H31.3911C31.574 12.3154 31.9533 13.2454 32.5061 14.0719C33.0589 14.8983 33.7736 15.6039 34.6071 16.146V16.146ZM21.5644 26.5283C20.3896 26.5297 19.2634 26.997 18.4326 27.8277C17.602 28.6584 17.1347 29.7846 17.1333 30.9594C17.1341 31.7676 17.3557 32.5602 17.7742 33.2515C18.1928 33.9428 18.7922 34.5066 19.5079 34.882C18.963 34.1305 18.6696 33.226 18.6695 32.2978C18.6706 31.1228 19.1378 29.9964 19.9686 29.1655C20.7993 28.3346 21.9257 27.8672 23.1006 27.8659C23.5572 27.8659 23.9948 27.9414 24.4081 28.0711V22.6893C23.975 22.628 23.5381 22.5961 23.1006 22.5941C23.0236 22.5941 22.9482 22.5985 22.872 22.5999V26.7336C22.4491 26.599 22.0082 26.5298 21.5644 26.5283"
+                                    fill="#FF004F" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M38.6013 18.5083V22.6052C35.8676 22.6052 33.3354 21.7309 31.2671 20.2468V30.9597C31.2671 36.3098 26.9152 40.6625 21.565 40.6625C19.4974 40.6625 17.5802 40.0103 16.0044 38.9036C16.9103 39.8805 18.0083 40.6599 19.2295 41.1927C20.4507 41.7255 21.7688 42.0004 23.1011 42.0001C28.4513 42.0001 32.804 37.6474 32.804 32.2979V21.585C34.9407 23.1214 37.5065 23.9466 40.1382 23.9435V18.671C39.6105 18.671 39.0975 18.6138 38.6013 18.5076"
+                                    fill="#FF004F" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M31.2671 30.9594V20.2466C33.4037 21.7831 35.9696 22.6083 38.6013 22.6051V18.5081C37.0497 18.1735 35.6483 17.3447 34.6077 16.146C33.7743 15.6039 33.0595 14.8983 32.5067 14.0719C31.9539 13.2454 31.5746 12.3154 31.3917 11.3381H27.5322L27.5242 32.4641C27.4355 34.8299 25.4882 36.7289 23.1011 36.7289C22.3988 36.7282 21.7067 36.5602 21.0821 36.2391C20.4576 35.918 19.9184 35.4528 19.5092 34.882C18.7934 34.5067 18.1937 33.943 17.775 33.2516C17.3564 32.5603 17.1346 31.7677 17.1338 30.9594C17.1352 29.7846 17.6024 28.6584 18.4332 27.8277C19.2638 26.997 20.3902 26.5297 21.565 26.5283C22.0208 26.5283 22.4584 26.6031 22.8724 26.7336V22.5999C17.6278 22.7231 13.3989 27.0238 13.3989 32.2978C13.3989 34.8482 14.3898 37.1701 16.0044 38.9041C17.6321 40.05 19.5744 40.6641 21.565 40.6624C26.9152 40.6624 31.2671 36.3096 31.2671 30.9594"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+                        <span class="font-bold tracking-tight">TikTok</span>
+                    </a>
+                </div>
+
+
+                <!-- Twitter -->
+                <!-- <div class="w-auto p-1.5">
+                <a class="flex items-center px-6 py-2.5 bg-white hover:bg-gray-100 border border-gray-300 rounded-full transition duration-200"
+                    href="#">
+                    <div class="inline-block">
+                        <svg class="mr-1.5" width="22" height="22" viewbox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.9995 0.439941C5.16725 0.439941 0.439453 5.16774 0.439453 10.9999C0.439453 16.8321 5.16725 21.5599 10.9995 21.5599C16.8317 21.5599 21.5595 16.8321 21.5595 10.9999C21.5595 5.16774 16.8317 0.439941 10.9995 0.439941ZM15.295 9.09034C15.2994 9.18054 15.3005 9.27074 15.3005 9.35874C15.3005 12.1087 13.2094 15.2778 9.38355 15.2778C8.25308 15.2797 7.14612 14.955 6.19575 14.3428C6.35745 14.3626 6.52355 14.3703 6.69185 14.3703C7.66645 14.3703 8.56295 14.0392 9.27465 13.4804C8.84094 13.4719 8.42069 13.3283 8.07247 13.0696C7.72426 12.8109 7.46543 12.45 7.33205 12.0372C7.64352 12.0965 7.96439 12.0841 8.27035 12.0009C7.79961 11.9057 7.37627 11.6507 7.07213 11.279C6.76799 10.9073 6.60177 10.4418 6.60165 9.96154V9.93624C6.88215 10.0913 7.20335 10.1859 7.54435 10.1969C7.10303 9.90316 6.79062 9.45188 6.671 8.93539C6.55139 8.41889 6.63361 7.87622 6.90085 7.41834C7.4233 8.06074 8.07484 8.58626 8.81328 8.96088C9.55172 9.3355 10.3606 9.55087 11.1876 9.59304C11.0824 9.14678 11.1277 8.67829 11.3163 8.2604C11.5049 7.8425 11.8262 7.49863 12.2304 7.28223C12.6346 7.06583 13.099 6.98904 13.5513 7.06378C14.0037 7.13852 14.4187 7.36062 14.7318 7.69554C15.1972 7.60344 15.6436 7.4327 16.0518 7.19064C15.8966 7.67259 15.5718 8.08183 15.1377 8.34234C15.55 8.29268 15.9526 8.18183 16.3323 8.01344C16.0534 8.43132 15.7021 8.79602 15.295 9.09034Z"
+                                fill="#60ACEC"></path>
+                        </svg>
+                    </div>
+                    <span class="font-bold tracking-tight">Twitter</span>
+                </a>
+            </div> -->
+
+                <!-- Discord -->
+                <!-- <div class="w-auto p-1.5">
+                <a class="flex items-center px-6 py-2.5 bg-white hover:bg-gray-100 border border-gray-300 rounded-full transition duration-200"
+                    href="#">
+                    <div class="inline-block">
+                        <svg class="mr-1.5" width="22" height="22" viewbox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="11" fill="#4B59EF"></circle>
+                            <path
+                                d="M16.0446 7.33128C15.2133 6.94378 14.3133 6.66253 13.3758 6.50003C13.3676 6.49977 13.3594 6.50131 13.3519 6.50455C13.3443 6.50779 13.3375 6.51265 13.3321 6.51878C13.2196 6.72503 13.0883 6.99378 13.0008 7.20003C12.0064 7.05003 10.9952 7.05003 10.0008 7.20003C9.91331 6.98753 9.78206 6.72503 9.66331 6.51878C9.65706 6.50628 9.63831 6.50003 9.61956 6.50003C8.68206 6.66253 7.78831 6.94378 6.95081 7.33128C6.94456 7.33128 6.93831 7.33753 6.93206 7.34378C5.23206 9.88753 4.76331 12.3625 4.99456 14.8125C4.99456 14.825 5.00081 14.8375 5.01331 14.8438C6.13831 15.6688 7.21956 16.1688 8.28831 16.5C8.30706 16.5063 8.32581 16.5 8.33206 16.4875C8.58206 16.1438 8.80706 15.7813 9.00081 15.4C9.01331 15.375 9.00081 15.35 8.97581 15.3438C8.61956 15.2063 8.28206 15.0438 7.95081 14.8563C7.92581 14.8438 7.92581 14.8063 7.94456 14.7875C8.01331 14.7375 8.08206 14.6813 8.15081 14.6313C8.16331 14.6188 8.18206 14.6188 8.19456 14.625C10.3446 15.6063 12.6633 15.6063 14.7883 14.625C14.8008 14.6188 14.8196 14.6188 14.8321 14.6313C14.9008 14.6875 14.9696 14.7375 15.0383 14.7938C15.0633 14.8125 15.0633 14.85 15.0321 14.8625C14.7071 15.0563 14.3633 15.2125 14.0071 15.35C13.9821 15.3563 13.9758 15.3875 13.9821 15.4063C14.1821 15.7875 14.4071 16.15 14.6508 16.4938C14.6696 16.5 14.6883 16.5063 14.7071 16.5C15.7821 16.1688 16.8633 15.6688 17.9883 14.8438C18.0008 14.8375 18.0071 14.825 18.0071 14.8125C18.2821 11.9813 17.5508 9.52503 16.0696 7.34378C16.0633 7.33753 16.0571 7.33128 16.0446 7.33128ZM9.32581 13.3188C8.68206 13.3188 8.14456 12.725 8.14456 11.9938C8.14456 11.2625 8.66956 10.6688 9.32581 10.6688C9.98831 10.6688 10.5133 11.2688 10.5071 11.9938C10.5071 12.725 9.98206 13.3188 9.32581 13.3188ZM13.6821 13.3188C13.0383 13.3188 12.5008 12.725 12.5008 11.9938C12.5008 11.2625 13.0258 10.6688 13.6821 10.6688C14.3446 10.6688 14.8696 11.2688 14.8633 11.9938C14.8633 12.725 14.3446 13.3188 13.6821 13.3188Z"
+                                fill="white"></path>
+                        </svg>
+                    </div>
+                    <span class="font-bold tracking-tight">Discord</span>
+                </a>
+            </div> -->
+
+                <!-- Spotify -->
+                <!-- <div class="w-auto p-1.5">
+                <a class="flex items-center px-6 py-2.5 bg-white hover:bg-gray-100 border border-gray-300 rounded-full transition duration-200"
+                    href="#">
+                    <div class="inline-block">
+                        <svg class="mr-1.5" width="20" height="20" viewbox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.0007 0.833496C15.0634 0.833496 19.1673 4.93741 19.1673 10.0002C19.1673 15.0629 15.0634 19.1668 10.0007 19.1668C4.9379 19.1668 0.833984 15.0629 0.833984 10.0002C0.833984 4.93741 4.9379 0.833496 10.0007 0.833496ZM10.0007 2.66683C8.05573 2.66683 6.19047 3.43945 4.8152 4.81471C3.43993 6.18998 2.66732 8.05524 2.66732 10.0002C2.66732 11.9451 3.43993 13.8103 4.8152 15.1856C6.19047 16.5609 8.05573 17.3335 10.0007 17.3335C11.9456 17.3335 13.8108 16.5609 15.1861 15.1856C16.5614 13.8103 17.334 11.9451 17.334 10.0002C17.334 8.05524 16.5614 6.18998 15.1861 4.81471C13.8108 3.43945 11.9456 2.66683 10.0007 2.66683ZM6.08465 11.9352C7.38448 11.6364 8.77507 11.6401 9.97773 11.8262C11.1474 12.0077 12.2822 12.3853 12.9817 12.9573C13.163 13.1046 13.2813 13.3156 13.3123 13.5472C13.3433 13.7788 13.2847 14.0135 13.1485 14.2033C13.0123 14.3932 12.8087 14.5238 12.5794 14.5686C12.35 14.6133 12.1123 14.5688 11.9147 14.4442L11.8212 14.3772C11.4948 14.1096 10.7413 13.7997 9.69632 13.6384C8.6834 13.4807 7.53115 13.4844 6.49532 13.7218C6.37738 13.7506 6.2549 13.7556 6.13499 13.7367C6.01509 13.7177 5.90015 13.6751 5.79684 13.6113C5.69353 13.5476 5.60391 13.464 5.53318 13.3653C5.46246 13.2666 5.41203 13.1549 5.38484 13.0366C5.35764 12.9183 5.35422 12.7958 5.37476 12.6761C5.39531 12.5565 5.43941 12.4421 5.50452 12.3396C5.56962 12.2372 5.65443 12.1487 5.75402 12.0792C5.85361 12.0098 5.96599 11.9609 6.08465 11.9352ZM5.60798 9.43183C8.5954 8.59858 12.0705 9.06975 14.1907 10.3714C14.398 10.4987 14.5462 10.7031 14.6028 10.9396C14.6593 11.1762 14.6196 11.4255 14.4923 11.6327C14.365 11.84 14.1607 11.9882 13.9241 12.0448C13.6876 12.1013 13.4382 12.0616 13.231 11.9343C11.5966 10.9306 8.65682 10.4851 6.09932 11.1973C5.98222 11.2335 5.85904 11.2459 5.73708 11.2337C5.61513 11.2214 5.49686 11.1849 5.38928 11.1261C5.2817 11.0674 5.18699 10.9877 5.11076 10.8917C5.03453 10.7957 4.97832 10.6854 4.94546 10.5673C4.9126 10.4492 4.90375 10.3258 4.91944 10.2042C4.93513 10.0826 4.97504 9.96547 5.03681 9.8596C5.09858 9.75373 5.18096 9.66133 5.27906 9.58785C5.37717 9.51438 5.48902 9.46132 5.60798 9.43183ZM5.16982 6.80466C8.61648 5.84216 12.0402 6.34175 14.947 7.59666C15.1682 7.69433 15.3419 7.87547 15.4302 8.10063C15.5185 8.32578 15.5142 8.57671 15.4183 8.79873C15.3224 9.02075 15.1427 9.19588 14.9182 9.28596C14.6938 9.37605 14.4428 9.37378 14.2201 9.27966C11.6259 8.15858 8.6339 7.7415 5.66298 8.57016C5.54638 8.60481 5.42404 8.6159 5.3031 8.60279C5.18216 8.58968 5.06505 8.55263 4.95857 8.4938C4.8521 8.43497 4.7584 8.35554 4.68294 8.26013C4.60747 8.16472 4.55175 8.05524 4.51902 7.93808C4.4863 7.82092 4.47722 7.69842 4.49231 7.57771C4.50741 7.45701 4.54638 7.34051 4.60695 7.23502C4.66752 7.12953 4.74849 7.03715 4.84512 6.96326C4.94176 6.88937 5.05213 6.83546 5.16982 6.80466Z"
+                                fill="#69F285"></path>
+                        </svg>
+                    </div>
+                    <span class="font-bold tracking-tight">Spotify</span>
+                </a>
+            </div> -->
+
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+    <!-- ====== Start Blog ====== -->
+
+    <br><br>
+
+    <!-- ====== Footer Section Start -->
+
+    <footer class="z-10 pb-5 my-4 drop-shadow-md">
+        <div class="container mx-auto">
+            <div class="lg:flex lg:justify-between">
+                <div class="mb-10 data-aos=" fade-up" data-aos-duration="600" data-aos-delay="150"">
+                    <a  href=" #" class="mb-2 text-2xl font-bold">GinanjarPutra</a>
+
+                    <p class="mt-3 text-base text-body-color "> Don't wait for the perfect moment; take the moment and
+                        make
+                        it
+                        perfect 🚀</p>
+                </div>
+
+                <div class="mb-10 md:mb-0 data-aos=" fade-up" data-aos-duration="600" data-aos-delay="150"">
+                    <div class=" flex-col items-end justify-end gap-4 ">
+                    <h4 class=" mb-2 text-lg font-semibold text-dark">Quick Link</h4>
+                    <ul class="flex gap-4">
+                        <li>
+                            <a href="#home"
+                                class="inline-block mb-2 text-base leading-loose text-body-color hover:text-primary">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about"
+                                class="inline-block mb-2 text-base leading-loose text-body-color hover:text-primary">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#portfolio"
+                                class="inline-block mb-2 text-base leading-loose text-body-color hover:text-primary">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#blog"
+                                class="inline-block mb-2 text-base leading-loose text-body-color hover:text-primary">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact"
+                                class="inline-block mb-2 text-base leading-loose text-body-color hover:text-primary">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+
+    </footer>
+
+    <div class="py-9"></div>
+
+
+
+
+
+    <!-- Don't wait for the perfect moment; take the moment and make it perfect. -->
+    <!-- ====== Footer Section End -->
+
+    <script src="../../dist/js/script.js"></script>
+
+
+    <!-- START ZOOM BIASA -->
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+    <script>
+        // Inisialisasi medium-zoom
+        const zoom = mediumZoom('.zoom');
+    </script>
+
+    <!-- END ZOOM BIASA -->
+
+
+    <!-- START ZOOM PERSEN -->
+    <script src="https://cdn.jsdelivr.net/npm/zoomjs@2.3.1/dist/zoom.min.js"></script>
+    <script>
+        // Inisialisasi zoom.js
+        const zoomableCustom = document.querySelector('.zoomable-custom');
+        zoomableCustom.style.cursor = 'zoom-in'; // Tambahkan cursor kustom
+
+        zoomableCustom.addEventListener('zoom.custom', function (e) {
+            // Tangkap persentase zoom dan tampilkan di console
+            console.log('Zoom Percentage:', e.detail.ratio);
+        });
+
+        // Aktifkan zoom.js dengan opsi persentase zoom yang dapat diatur
+        new Zoom(zoomableCustom, { onZoom: (e) => { zoomableCustom.dispatchEvent(new CustomEvent('zoom.custom', { detail: e })); } });
+    </script>
+    <!-- END ZOOM PERSEN -->
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
